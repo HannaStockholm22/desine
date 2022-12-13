@@ -1,0 +1,33 @@
+.footer{
+    flex: 0 0 auto;    
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;  
+    border: 1px solid red;
+  }
+
+  .content{
+    background-color: #DFDFDF;  
+    color:#383838;
+    height: 342px; 
+    padding: 0;
+    margin: 0;
+  }
+  .inner{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright{
+    height: 110px;
+    background-color: #383838;  
+    text-align: center;
+    color:#A1A1A1;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+  }

@@ -1,0 +1,53 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;  
+  border: 1px solid red;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.item {
+  color: rgba(54, 56, 56, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 22px;
+  font-weight: 700;
+  padding-right: 35px;
+  padding-left: 45px;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.link {
+  color: inherit;
+  border: 2px solid inherit;
+  padding: 2px;  
+}
+
+.active {
+  color: gold;
+  border-bottom: 2px solid gold;  
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
