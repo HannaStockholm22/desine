@@ -8,15 +8,17 @@ import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
-import store from './red/state';
 
 
 
-const App = () => {
+
+const App = (props) => {
   return (
-    <div >
-      <Navbar />
-      <div >
+    <div  className='wrapper'>
+      <header className='header'>
+        <Navbar />
+      </header>
+      <main className='main'>
         <Routes>
           <Route path="/about/*" element={<About />} />
           <Route path="/gallery/*" element={<Gallery />} />
@@ -24,8 +26,10 @@ const App = () => {
           <Route path="/blog/*" element={<Blog />} />
           <Route path="/contact/*" element={<Contact />} />
         </Routes>
-      </div>
-      <Footer />
+      </main>
+      <footer className='footer'>
+      <Footer data={props.state.footerPart}  dispatch={props.dispatch}/>
+      </footer>
     </div>
   );
 }
