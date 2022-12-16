@@ -1,0 +1,41 @@
+
+.content {
+    max-width: 483px;
+    margin: 0 auto;
+    text-align: center;   
+    padding: 0 95px;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title {
+    color: #363838;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;   
+    position: relative;
+    padding-bottom: 17px;
+}
+.title::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 252px;
+    margin: 0 auto;
+    background-color: #979797 ;
+    height: 1px;
+
+}
+.text{
+    margin-bottom: 75px;
+}
+.img{
+    max-width: 483px;
+}

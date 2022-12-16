@@ -1,20 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ls from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 import RightsideMenu from '../RightsideMenu/RightsideMenu';
 
 
 const Navbar = () => {
-
-    const [isActive, setIsActive] = useState(false);
-
-    useEffect(() => {
-        console.log(isActive);
-    }, [isActive]);
-
-    const toggleClass = () => {
-        setIsActive(!isActive);
-    };
+    //const openRightsideMenu = () => {
+    //    navData => navData.isActive ? ls.active : ls.link;
+    //    console.log('onClick');
+    //}
+    //const [activeState, setActiveState] = useState(false);
+    //setActiveState(prev => !prev);
 
     return (
         <div className={ls.container}>
@@ -43,19 +39,15 @@ const Navbar = () => {
                     </div>
                 </nav>
 
-                <button className={ls.btn} onClick={toggleClass} >
+                <button className={ls.btn} >
                     <img src="images/icon/icon_menu.svg" alt="icon_menu" />
                 </button>
-                <div className={isActive ? ls.sideMenu : ls.sideMenuClose}>
-                    <div className={ls.sideMenu}>
-                        <button className={ls.cross} onClick={toggleClass}>
-                            <img src="images/rightside/path.svg" alt="cross" />
-                        </button>
-                        <RightsideMenu />
-                    </div>
+                <div className={`${ls.sideMenu}${ls.sideMenuClose}`}>
+               
+                    <RightsideMenu/>
                 </div>
             </div>
-        </div>  
-    )   
+        </div>
+    )
 }
 export default Navbar;

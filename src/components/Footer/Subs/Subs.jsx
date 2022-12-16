@@ -1,6 +1,5 @@
 import React from 'react';
 import ls from './Subs.module.css';
-import imimg from './../../../images/envelope.svg';
 import {addEmailActionCreator ,updateNewEmailActionCreator} from './../../../red/state.js';
 
 
@@ -23,7 +22,7 @@ const Subs = (props) => {
                 schlitz you probably occupy
             </p>
             <div className={ls.email}>
-                <img src={imimg} alt="email" />
+                <img src="images/icon/envelope.svg" alt="email" />
                 <a className={ls.link} href="mailto:ouremailaddress@email.com">
                     ouremailaddress@email.com
                 </a>
