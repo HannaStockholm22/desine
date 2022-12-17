@@ -1,15 +1,15 @@
 import React from 'react';
 
-import s from './About.module.css';
-
+import ls from './About.module.css';
 
 const About = () => {
     return (
-       
-        <div className={s.inner}>
-About
+        <div className={ls.item}>
+            
+            About
         </div>
-       
+
+
     )
 }
 export default About;

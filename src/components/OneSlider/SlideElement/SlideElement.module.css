@@ -1,0 +1,40 @@
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.img{
+    max-width: 703px;
+}
+.info{
+    margin-left: 25px;
+}
+.title{
+    font-size: 110px;
+    line-height: 134px;
+    color:#363838  ;
+    position: relative;
+    max-width: 635px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background:#979797;
+    width: 185px;
+    height: 1px;   
+}
+.text{
+    max-width: 585px;
+}
+.slick-dots li button{
+   background-color: yellow;
+}
+.slick-dots li.slick-active button { 
+    background-color: green;
+}
+

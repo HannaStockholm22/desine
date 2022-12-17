@@ -1,10 +1,11 @@
 import React from 'react';
-import s from './Home.module.css';
+import OneSlider from '../OneSlider/OneSlider';
+import ls from './Home.module.css';
 
-const Home = () => {
+const Home = (props) => {
     return (
-        <div className={s.inner} > 
-Home
+        <div className={ls.inner}>
+            <OneSlider data={props.data}/>       
         </div>
     )
 }
