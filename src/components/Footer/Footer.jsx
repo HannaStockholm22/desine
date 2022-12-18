@@ -13,7 +13,7 @@ const Footer = (props) => {
     return (
         <div >
             <div className={ls.content}>
-                <div className={ls.container}>
+                <div className='container'>
                     <div className={ls.inner}>
                         <Subs dispatch={props.dispatch} text={props.data.newEmailText}/>
                         <div className={ls.socialEl}>

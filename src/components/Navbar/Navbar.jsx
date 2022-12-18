@@ -17,7 +17,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className={ls.container}>
+        <div className='container'>
             <div className={ls.inner}>
                 <nav className={ls.list}>
                     <div className={ls.item}>

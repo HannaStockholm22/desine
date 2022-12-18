@@ -13,4 +13,24 @@ min-height: 100vh;
     flex: 0 0 auto;    
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;     
+}
+.container-fluid{
+    max-width: 1920;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.slick-dots li button:before {
+    color: #363838;  
+}
+.slick-dots li.slick-active button:before{ 
+    color:#FFEF35;     
+}
+
+  
+
   

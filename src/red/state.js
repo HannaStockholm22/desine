@@ -29,19 +29,57 @@ let store = {
                     name: "group1.png",
                     title: "Furniture collection"
                 },
-
                 {
                     id: 2,
                     name: "group1.png",
                     title: "Furniture collection."
                 },
-
                 {
                     id: 3,
                     name: "group1.png",
                     title: "Furniture collection.."
                 },
             ],
+            collectionData:[
+                {
+                    id: 1,
+                    name: "object1.jpg",
+                    title: "Furniture collection",
+                    department: "Living room furntiture." ,
+                    item:"Desk",
+                },
+
+                {
+                    id: 2,
+                    name: "object2.jpg",
+                    title: "Truffaut literally trust.",
+                    department:"Living room furntiture" ,
+                    item:"Chair",
+                },
+
+                {
+                    id: 3,
+                    name: "object3.jpg",
+                    title: "Truffaut literally trust..",
+                    department:"Living room furntiture" ,
+                    item:"Chair",
+                },
+                {
+                    id: 4,
+                    name: "object4.jpg",
+                    title: "Truffaut literally trust...",
+                    department:"Living room furntiture" ,
+                    item:"Table"
+                },
+                {
+                    id: 5,
+                    name: "object5.jpg",
+                    title: "Truffaut literally trust.",
+                    department:"Living room furntiture" ,
+                    item:"Sofa",
+                },
+
+            ]
         },
         aboutPage: {
             dialogsData: [

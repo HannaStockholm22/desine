@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SlideElement from './SlideElement/SlideElement';
-import ls from './OneSlider.module.css';
+
 
 const OneSlider = (props) => {
     const settings = {

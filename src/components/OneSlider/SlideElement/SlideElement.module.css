@@ -31,10 +31,4 @@
 .text{
     max-width: 585px;
 }
-.slick-dots li button{
-   background-color: yellow;
-}
-.slick-dots li.slick-active button { 
-    background-color: green;
-}
 
