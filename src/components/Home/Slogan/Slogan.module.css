@@ -1,0 +1,33 @@
+.inner{
+    padding:170px 0 155px ;
+    background-image: url(/public/images/slogan-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    
+}
+.title{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    max-width: 730px;
+    color:#363838;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+   
+}
+.title::after{
+    position: absolute;
+    content:'';
+    width: 200px;
+    height: 1px;
+    background: #6D7278;
+    left: 0;
+    bottom: 0;
+}
+
+.text{   
+    max-width: 540px;
+}

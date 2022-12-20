@@ -78,8 +78,27 @@ let store = {
                     department:"Living room furntiture" ,
                     item:"Sofa",
                 },
-
-            ]
+            ],
+            wayData:[
+                {
+                    id: 1,
+                    name: "icon1.svg",
+                    title: "Designer Consultation",
+                    text:"Kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche",
+                },
+                {
+                    id: 2,
+                    name: "icon2.svg",
+                    title: "Measurements",
+                    text:"Intelligentsia YOLO lomobushwick coloring book.Semiotics man bun venmo viral cliche",
+                },
+                {
+                    id: 3,
+                    name: "icon3.svg",
+                    title: "Production",
+                    text:"Everyday carry actually neutra authentic kogi shabby chic",
+                },
+            ],
         },
         aboutPage: {
             dialogsData: [
