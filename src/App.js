@@ -13,8 +13,9 @@ import { Route, Routes } from 'react-router-dom';
 
 
 const App = (props) => {
+
   return (
-    <div  className='wrapper'>
+    <div className='wrapper'>
       <header className='header'>
         <Navbar />
       </header>
@@ -22,13 +23,13 @@ const App = (props) => {
         <Routes>
           <Route path="/about/*" element={<About />} />
           <Route path="/gallery/*" element={<Gallery />} />
-          <Route path="/home/*" element={<Home data={props.state.homePage} />} />
+          <Route path="/home/*" element={<Home data={props.state} dispatch={props.dispatch} />} />
           <Route path="/blog/*" element={<Blog />} />
           <Route path="/contact/*" element={<Contact />} />
         </Routes>
       </main>
       <footer className='footer'>
-      <Footer data={props.state.footerPart}  dispatch={props.dispatch}/>
+        <Footer data={props.state.footerPart} dispatch={props.dispatch} />
       </footer>
     </div>
   );

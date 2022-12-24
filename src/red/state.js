@@ -1,5 +1,7 @@
 const ADD_EMAIL = 'ADD-EMAIL';
 const UPDATE_NEW_EMAIL = 'UPDATE-NEW-EMAIL';
+const UPDATE_BTN = 'UPDATE-BTN';
+
 
 let store = {
     _state: {
@@ -40,65 +42,105 @@ let store = {
                     title: "Furniture collection.."
                 },
             ],
-            collectionData:[
+            collectionData: [
                 {
                     id: 1,
                     name: "object1.jpg",
                     title: "Furniture collection",
-                    department: "Living room furntiture." ,
-                    item:"Desk",
+                    department: "Living room furntiture.",
+                    item: "Desk",
                 },
 
                 {
                     id: 2,
                     name: "object2.jpg",
                     title: "Truffaut literally trust.",
-                    department:"Living room furntiture" ,
-                    item:"Chair",
+                    department: "Living room furntiture",
+                    item: "Chair",
                 },
 
                 {
                     id: 3,
                     name: "object3.jpg",
                     title: "Truffaut literally trust..",
-                    department:"Living room furntiture" ,
-                    item:"Chair",
+                    department: "Living room furntiture",
+                    item: "Chair",
                 },
                 {
                     id: 4,
                     name: "object4.jpg",
                     title: "Truffaut literally trust...",
-                    department:"Living room furntiture" ,
-                    item:"Table"
+                    department: "Living room furntiture",
+                    item: "Table"
                 },
                 {
                     id: 5,
                     name: "object5.jpg",
                     title: "Truffaut literally trust.",
-                    department:"Living room furntiture" ,
-                    item:"Sofa",
+                    department: "Living room furntiture",
+                    item: "Sofa",
                 },
             ],
-            wayData:[
+            wayData: [
                 {
                     id: 1,
                     name: "icon1.svg",
                     title: "Designer Consultation",
-                    text:"Kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche",
+                    text: "Kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche",
                 },
                 {
                     id: 2,
                     name: "icon2.svg",
                     title: "Measurements",
-                    text:"Intelligentsia YOLO lomobushwick coloring book.Semiotics man bun venmo viral cliche",
+                    text: "Intelligentsia YOLO lomobushwick coloring book.Semiotics man bun venmo viral cliche",
                 },
                 {
                     id: 3,
                     name: "icon3.svg",
                     title: "Production",
-                    text:"Everyday carry actually neutra authentic kogi shabby chic",
+                    text: "Everyday carry actually neutra authentic kogi shabby chic",
                 },
             ],
+            galleryData: [
+                [
+                   {id:1,name:"bed/place1.jpg"}, 
+                   {id:2,name:"bed/place2.jpg"}, 
+                   {id:3,name:"bed/place3.jpg"}, 
+                   {id:4,name:"bed/place4.jpg"}, 
+                   {id:5,name:"bed/place5.jpg"}, 
+                  
+                ],
+                [
+                   {id:1,name:"liv/place1.jpg"}, 
+                   {id:2,name:"liv/place2.jpg"}, 
+                   {id:3,name:"liv/place3.jpg"}, 
+                   {id:4,name:"liv/place4.jpg"}, 
+                   {id:5,name:"liv/place5.jpg"}, 
+                ],
+                [
+                    {id:1,name:"off/place1.jpg"}, 
+                    {id:2,name:"off/place2.jpg"}, 
+                    {id:3,name:"off/place3.jpg"}, 
+                    {id:4,name:"off/place4.jpg"}, 
+                    {id:5,name:"off/place5.jpg"}, 
+                   
+                 ],
+                 [
+                    {id:1,name:"div/place1.jpg"}, 
+                    {id:2,name:"div/place2.jpg"}, 
+                    {id:3,name:"div/place3.jpg"}, 
+                    {id:4,name:"div/place4.jpg"}, 
+                    {id:5,name:"div/place5.jpg"}, 
+                 ],
+                 [
+                    {id:1,name:"cha/place1.jpg"}, 
+                    {id:2,name:"cha/place2.jpg"}, 
+                    {id:3,name:"cha/place3.jpg"}, 
+                    {id:4,name:"cha/place4.jpg"}, 
+                    {id:5,name:"cha/place5.jpg"}, 
+                 ],
+            ],
+            activeCategory: 1,
         },
         aboutPage: {
             dialogsData: [
@@ -108,7 +150,35 @@ let store = {
                 { id: 4, name: "D" },
                 { id: 5, name: "I" }
             ],
-        }
+        },
+        departmentsData: [
+            {
+                id: 0,
+                name: "Bedroom furniture",
+                pic:"bed"
+            },
+            {
+                id: 1,
+                name: "Living room furniture",
+                pic: "liv"
+            },
+            {
+                id: 2,
+                name: "Office furniture",
+                pic: "off"
+            },
+            {
+                id: 3,
+                name: "Dining room futniture",
+                pic: "div"
+            },
+            {
+                id: 4,
+                name: "Chair ",
+                pic: "cha"
+            },
+
+        ]
     },
     _callSubscriber() {
         console.log('new state');
@@ -120,6 +190,7 @@ let store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
+      console.log('in dispatch');
         let i = 1;
         if (action.type === ADD_EMAIL) {
             const newEmail = {
@@ -134,7 +205,13 @@ let store = {
             this._state.footerPart.newEmailText = action.newText;
             this._callSubscriber(this._state);
 
-        } else alert('Error in action');
+        } else if (action.type === UPDATE_BTN) {
+            console.log('UPDATE_BTN');
+            this._state.homePage.activeCategory = action.id;
+            this._callSubscriber(this._state);
+            console.log('activCateg='+this._state.homePage.activeCategory);
+        }
+        else alert('Error in action');
     }
 
 
@@ -142,5 +219,7 @@ let store = {
 }
 export const addEmailActionCreator = () => ({ type: ADD_EMAIL })
 export const updateNewEmailActionCreator = (text) => ({ type: UPDATE_NEW_EMAIL, newText: text })
+export const updateBtnActionCreator = (choice) => ({ type: UPDATE_BTN, id: choice })
 
 export default store;
+

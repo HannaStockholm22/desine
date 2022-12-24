@@ -7,14 +7,15 @@ import { BrowserRouter } from 'react-router-dom';
 import store from './red/state'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let rerenderEntireTree =(state)=>{
-root.render(
-  <React.StrictMode>
-     <BrowserRouter>
-    <App state={store.getState()}  dispatch={store.dispatch.bind(store)} />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+
+let rerenderEntireTree = (state) => {
+  root.render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App state={store.getState()} dispatch={store.dispatch.bind(store)} />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
 }
 
 rerenderEntireTree(store.getState());

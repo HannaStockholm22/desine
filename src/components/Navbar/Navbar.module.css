@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 120px;
+  overflow: hidden;
 }
 
 .list {
@@ -58,6 +59,7 @@
     box-shadow: -2px 3px 17px 0px #000;
     transition: all .5s;
     z-index: 5;
+  
 }
 
 .cross{

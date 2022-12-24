@@ -24,11 +24,11 @@ min-height: 100vh;
     padding: 0 10px;
 }
 
-.slick-dots li button:before {
+.slick-dots li button:after {
     color: #363838;  
 }
 .slick-dots li.slick-active button:before{ 
-    color:#FFEF35;     
+    color:#FFEF35 !important;     
 }
 
   

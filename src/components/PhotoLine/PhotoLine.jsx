@@ -2,7 +2,7 @@ import React from 'react';
 import ls from './PhotoLine.module.css';
 
 const PhotoLine = (props) => {
-    const pathpub = `images/gallery/${props.name}`;
+    const pathpub = `images/line/${props.name}`;
     const fulltext = `${props.department} | ${props.item} `;
     const title = props.title;
 
