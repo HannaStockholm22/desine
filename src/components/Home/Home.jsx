@@ -3,11 +3,12 @@ import OneSlider from '../OneSlider/OneSlider';
 import Collection from './Collection/Collection';
 import FirstGallery from './FirstGallery/FirstGallery';
 import ls from './Home.module.css';
+import Inspiration from './Inspiration/Inspiration';
 import Slogan from './Slogan/Slogan';
 import Way from './Way/Way';
 
 const Home = (props) => {
-  
+ 
     return (
         <div className={ls.inner}>
             <OneSlider data={props.data.homePage}/>  
@@ -15,6 +16,7 @@ const Home = (props) => {
             <Slogan/>
             <Way wayData={props.data.homePage.wayData}/>
             <FirstGallery data={props.data} dispatch={props.dispatch}/>
+            <Inspiration data={props.data.homePage}/>
         </div>
     )
 }

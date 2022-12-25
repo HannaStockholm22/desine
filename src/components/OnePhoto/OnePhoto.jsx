@@ -9,20 +9,11 @@ const OnePhoto = (props) => {
     console.log('department=', props.depart);
     console.log("props.id=", props.id, " props.name=", props.name);
 
-    const myStyle = {
-        padding: "5px",
-        backgroundImage: "url('logo192.png')",
-        backgroundColor: "black",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-    }
-
     if (props.id == form) big = true
     else big = false;
 
     return (      
-        <div className={big ? ls.item1 : ls.item2} style={myStyle} >
+        <div className={big ? ls.item1 : ls.item}  >
             <img className={ls.img} src={pathpub} alt="photo" />
         </div>
     )

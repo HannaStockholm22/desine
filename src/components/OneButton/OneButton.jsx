@@ -18,9 +18,8 @@ const OneButton = (props) => {
         props.dispatch(updateBtnActionCreator(choice));
     }
 
-
     return (
-        <div className={ls.radio}>
+        <div className={ls.radio} >
             <input className={ls.input} id={props.id} ref={inputEl} type="radio" name="radio" value={props.id} checked={check}/>
             <label className={ls.label}for={props.id} onClick={onClickBtn} >{props.name}</label>
          

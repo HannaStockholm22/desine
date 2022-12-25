@@ -42,6 +42,7 @@ let store = {
                     title: "Furniture collection.."
                 },
             ],
+
             collectionData: [
                 {
                     id: 1,
@@ -101,6 +102,25 @@ let store = {
                     text: "Everyday carry actually neutra authentic kogi shabby chic",
                 },
             ],
+            inspirationData:[
+                {
+                    id: 1,
+                    photo:"img1.jpg",
+                    autor: "by Ann Summers",
+                    dataPubl:["March","12,",2020],
+                    category:"Interior",
+                    title: "Listicle actually selvage activated charcoal for the drinking vinegar "
+                },
+                {
+                    id: 2,
+                    photo:"img2.jpg",
+                    autor: "by Finnagan Morningsta",
+                    dataPubl: ["September","28,", 2020],
+                    category:"Dining room interiorr",
+                    title: "Listicle actually selvage activated charcoal for the drinking vinegar "
+                },
+               
+            ],
             galleryData: [
                 [
                    {id:1,name:"bed/place1.jpg"}, 
@@ -141,6 +161,7 @@ let store = {
                  ],
             ],
             activeCategory: 1,
+           
         },
         aboutPage: {
             dialogsData: [
