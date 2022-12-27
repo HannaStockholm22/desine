@@ -4,7 +4,6 @@ import ls from './BreadCrumbs.module.css';
 
 const BreadCrumbs = (props) => {
     //let CrumbsElement = props.data.departmentsData.map(el => <NavLink className={ls.link} to='/home'> id={el.id}  </NavLink>);
-
     return (
         <div className={ls.inner}>
             <div className="container">
