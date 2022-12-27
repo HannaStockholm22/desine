@@ -17,10 +17,14 @@
     padding-left: 3px;
 }
 
-.next {
+.link {
     padding: 0 6px;
     border-left: 1px solid #707070;
     margin-left: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #707070;
 }
 
 .title {

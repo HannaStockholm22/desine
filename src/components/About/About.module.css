@@ -1,4 +1,22 @@
-.inner{
-    height: 100px;
-    background-color: aqua;
+.inner {
+    margin: 0;
+}
+.section {
+    background-image: url('./../../../public/images/about/placeholder.jpg');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;  
+    border: 1px solid grey; 
+   margin-top: -50px; 
+}
+
+.title {
+    display: block;
+    font-family:Montserrat;
+    font-weight: 700;
+    text-align: center;
+    padding: 160px 0;
+    font-size: 60px;
+    line-height: 80px;
+    color: #363838
 }

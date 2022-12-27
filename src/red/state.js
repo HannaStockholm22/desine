@@ -42,7 +42,6 @@ let store = {
                     title: "Furniture collection.."
                 },
             ],
-
             collectionData: [
                 {
                     id: 1,
@@ -102,66 +101,66 @@ let store = {
                     text: "Everyday carry actually neutra authentic kogi shabby chic",
                 },
             ],
-            inspirationData:[
+            inspirationData: [
                 {
                     id: 1,
-                    photo:"img1.jpg",
+                    photo: "img1.jpg",
                     autor: "by Ann Summers",
-                    dataPubl:["March","12,",2020],
-                    category:"Interior",
+                    dataPubl: ["March", "12,", 2020],
+                    category: "Interior",
                     title: "Listicle actually selvage activated charcoal for the drinking vinegar "
                 },
                 {
                     id: 2,
-                    photo:"img2.jpg",
+                    photo: "img2.jpg",
                     autor: "by Finnagan Morningsta",
-                    dataPubl: ["September","28,", 2020],
-                    category:"Dining room interiorr",
-                    title: "Listicle actually selvage activated charcoal for the drinking vinegar "
+                    dataPubl: ["September", "28,", 2020],
+                    category: "Dining room interiorr",
+                    title: "Red selfies edison bulb four dollar toast humblebrag "
                 },
-               
+
             ],
             galleryData: [
                 [
-                   {id:1,name:"bed/place1.jpg"}, 
-                   {id:2,name:"bed/place2.jpg"}, 
-                   {id:3,name:"bed/place3.jpg"}, 
-                   {id:4,name:"bed/place4.jpg"}, 
-                   {id:5,name:"bed/place5.jpg"}, 
-                  
+                    { id: 1, name: "bed/place1.jpg" },
+                    { id: 2, name: "bed/place2.jpg" },
+                    { id: 3, name: "bed/place3.jpg" },
+                    { id: 4, name: "bed/place4.jpg" },
+                    { id: 5, name: "bed/place5.jpg" },
+
                 ],
                 [
-                   {id:1,name:"liv/place1.jpg"}, 
-                   {id:2,name:"liv/place2.jpg"}, 
-                   {id:3,name:"liv/place3.jpg"}, 
-                   {id:4,name:"liv/place4.jpg"}, 
-                   {id:5,name:"liv/place5.jpg"}, 
+                    { id: 1, name: "liv/place1.jpg" },
+                    { id: 2, name: "liv/place2.jpg" },
+                    { id: 3, name: "liv/place3.jpg" },
+                    { id: 4, name: "liv/place4.jpg" },
+                    { id: 5, name: "liv/place5.jpg" },
                 ],
                 [
-                    {id:1,name:"off/place1.jpg"}, 
-                    {id:2,name:"off/place2.jpg"}, 
-                    {id:3,name:"off/place3.jpg"}, 
-                    {id:4,name:"off/place4.jpg"}, 
-                    {id:5,name:"off/place5.jpg"}, 
-                   
-                 ],
-                 [
-                    {id:1,name:"div/place1.jpg"}, 
-                    {id:2,name:"div/place2.jpg"}, 
-                    {id:3,name:"div/place3.jpg"}, 
-                    {id:4,name:"div/place4.jpg"}, 
-                    {id:5,name:"div/place5.jpg"}, 
-                 ],
-                 [
-                    {id:1,name:"cha/place1.jpg"}, 
-                    {id:2,name:"cha/place2.jpg"}, 
-                    {id:3,name:"cha/place3.jpg"}, 
-                    {id:4,name:"cha/place4.jpg"}, 
-                    {id:5,name:"cha/place5.jpg"}, 
-                 ],
+                    { id: 1, name: "off/place1.jpg" },
+                    { id: 2, name: "off/place2.jpg" },
+                    { id: 3, name: "off/place3.jpg" },
+                    { id: 4, name: "off/place4.jpg" },
+                    { id: 5, name: "off/place5.jpg" },
+
+                ],
+                [
+                    { id: 1, name: "div/place1.jpg" },
+                    { id: 2, name: "div/place2.jpg" },
+                    { id: 3, name: "div/place3.jpg" },
+                    { id: 4, name: "div/place4.jpg" },
+                    { id: 5, name: "div/place5.jpg" },
+                ],
+                [
+                    { id: 1, name: "cha/place1.jpg" },
+                    { id: 2, name: "cha/place2.jpg" },
+                    { id: 3, name: "cha/place3.jpg" },
+                    { id: 4, name: "cha/place4.jpg" },
+                    { id: 5, name: "cha/place5.jpg" },
+                ],
             ],
             activeCategory: 1,
-           
+
         },
         aboutPage: {
             dialogsData: [
@@ -176,7 +175,7 @@ let store = {
             {
                 id: 0,
                 name: "Bedroom furniture",
-                pic:"bed"
+                pic: "bed"
             },
             {
                 id: 1,
@@ -199,6 +198,33 @@ let store = {
                 pic: "cha"
             },
 
+        ],
+        PathToData: [
+            {
+                id: 0,
+                step: "/home",
+                name: "Home"
+            },
+            {
+                id: 1,
+                step: "/about",
+                name: "About"
+            },
+            {
+                id: 2,
+                step: "/gallery",
+                name: "Gallery"
+            },
+            {
+                id: 3,
+                step: "/blog",
+                name: "Blog"
+            },
+            {
+                id: 4,
+                step: "/contact",
+                name: "Contact"
+            }
         ]
     },
     _callSubscriber() {
@@ -211,7 +237,7 @@ let store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
-      console.log('in dispatch');
+        console.log('in dispatch');
         let i = 1;
         if (action.type === ADD_EMAIL) {
             const newEmail = {
@@ -230,7 +256,7 @@ let store = {
             console.log('UPDATE_BTN');
             this._state.homePage.activeCategory = action.id;
             this._callSubscriber(this._state);
-            console.log('activCateg='+this._state.homePage.activeCategory);
+            console.log('activCateg=' + this._state.homePage.activeCategory);
         }
         else alert('Error in action');
     }

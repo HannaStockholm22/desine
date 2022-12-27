@@ -1,0 +1,34 @@
+.inner {
+    background: rgba(240, 240, 240, .5);
+ 
+}
+
+.line {
+    display: flex;
+    justify-content: start;
+}
+
+.link {
+    color: rgba(90, 90, 90, 1);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    position: relative; 
+    margin: 12px; 
+}
+
+.link+.link {
+    margin-left: 10px;
+}
+
+.link::after {
+    position: absolute;
+    content: '/';
+    top: 0;
+    right: -7px;
+}
+
+.link:last-child::after {
+    position: absolute;
+    content: '';
+}
