@@ -1,0 +1,17 @@
+.inner{
+    padding-top: 40px;
+    background-image: url('./../../../../public/images/about/video.jpg');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;  
+    height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: inherit;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
