@@ -45,7 +45,7 @@ let store = {
             collectionData: [
                 {
                     id: 1,
-                    name: "object1.jpg",
+                    name: "home/object1.jpg",
                     title: "Furniture collection",
                     department: "Living room furntiture.",
                     item: "Desk",
@@ -53,7 +53,7 @@ let store = {
 
                 {
                     id: 2,
-                    name: "object2.jpg",
+                    name: "home/object2.jpg",
                     title: "Truffaut literally trust.",
                     department: "Living room furntiture",
                     item: "Chair",
@@ -61,21 +61,21 @@ let store = {
 
                 {
                     id: 3,
-                    name: "object3.jpg",
+                    name: "home/object3.jpg",
                     title: "Truffaut literally trust..",
                     department: "Living room furntiture",
                     item: "Chair",
                 },
                 {
                     id: 4,
-                    name: "object4.jpg",
+                    name: "home/object4.jpg",
                     title: "Truffaut literally trust...",
                     department: "Living room furntiture",
                     item: "Table"
                 },
                 {
                     id: 5,
-                    name: "object5.jpg",
+                    name: "home/object5.jpg",
                     title: "Truffaut literally trust.",
                     department: "Living room furntiture",
                     item: "Sofa",
@@ -168,6 +168,57 @@ let store = {
                 { id: 2, name: "Measurments",num:"70%" },
                 { id: 3, name: "Furniture functionality analysis",num:"75%" },
                 { id: 4, name: "Interior visualization" ,num:"40%"},
+            ],
+            collectionData: [
+                {
+                    id: 1,
+                    name: "about/photo1.jpg",
+                    title: "Furniture collection",
+                    department: "Living room furntiture.",
+                    item: "Desk",
+                    width:"350px"
+                },
+
+                {
+                    id: 2,
+                    name: "about/photo2.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Chair",
+                    width:"350px"
+                },
+
+                {
+                    id: 3,
+                    name: "about/photo3.jpg",
+                    title: "Truffaut literally trust..",
+                    department: "Living room furntiture",
+                    item: "Chair",
+                    width:"350px"
+                },
+                {
+                    id: 4,
+                    name: "about/photo4.jpg",
+                    title: "Truffaut literally trust...",
+                    department: "Living room furntiture",
+                    item: "Table",
+                    width:"350px"
+                },
+                {
+                    id: 5,
+                    name: "about/photo5.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                    width:"350px"
+                },
+            ],
+            logosData: [
+                { id: 1, name: "logos/object1.svg",width:"350px"},
+                { id: 2, name: "logos/object2.svg",width:"350px"},
+                { id: 3, name: "logos/object3.svg",width:"350px"},
+                { id: 4, name: "logos/object4.svg",width:"350px"},
+                { id: 5, name: "logos/object5.svg",width:"350px"},          
             ],
         },
         departmentsData: [

@@ -9,7 +9,7 @@ const PhotoLine = (props) => {
     return (
         <div >
             <div className={ls.item}>
-                <img className={ls.img} src={pathpub} alt="photo" />
+                <img className={ls.img} src={pathpub}   alt="photo" />
                 <div className={ls.info}>
                     <div className={ls.title}>{title}</div>
                     <div className={ls.text}>{fulltext}</div>

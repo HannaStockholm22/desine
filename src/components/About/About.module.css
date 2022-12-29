@@ -20,3 +20,9 @@
     line-height: 80px;
     color: #363838
 }
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+    margin-bottom: 51px;
+}

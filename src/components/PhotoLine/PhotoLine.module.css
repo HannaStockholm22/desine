@@ -7,9 +7,9 @@
 }
 
 .img {
-    max-width: 230px;
-    min-height: 350px;
     object-fit: cover;
+    padding: 0;
+    max-width: 310px;
 }
 
 .info {
