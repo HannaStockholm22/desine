@@ -163,12 +163,11 @@ let store = {
 
         },
         aboutPage: {
-            dialogsData: [
-                { id: 1, name: "A" },
-                { id: 2, name: "B" },
-                { id: 3, name: "C" },
-                { id: 4, name: "D" },
-                { id: 5, name: "I" }
+            detailsData: [
+                { id: 1, name: "Design and technical drawings",num:"80%"},
+                { id: 2, name: "Measurments",num:"70%" },
+                { id: 3, name: "Furniture functionality analysis",num:"75%" },
+                { id: 4, name: "Interior visualization" ,num:"40%"},
             ],
         },
         departmentsData: [
@@ -199,33 +198,7 @@ let store = {
             },
 
         ],
-        PathToData: [
-            {
-                id: 0,
-                step: "/home",
-                name: "Home"
-            },
-            {
-                id: 1,
-                step: "/about",
-                name: "About"
-            },
-            {
-                id: 2,
-                step: "/gallery",
-                name: "Gallery"
-            },
-            {
-                id: 3,
-                step: "/blog",
-                name: "Blog"
-            },
-            {
-                id: 4,
-                step: "/contact",
-                name: "Contact"
-            }
-        ]
+      
     },
     _callSubscriber() {
         console.log('new state');

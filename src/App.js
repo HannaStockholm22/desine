@@ -21,7 +21,7 @@ const App = (props) => {
       </header>
       <main className='main'>
         <Routes>
-          <Route path="/about/*" element={<About />} />
+          <Route path="/about/*" element={<About data={props.state.aboutPage}/>} />
           <Route path="/gallery/*" element={<Gallery />} />
           <Route path="/home/*" element={<Home data={props.state} dispatch={props.dispatch} />} />
           <Route path="/blog/*" element={<Blog />} />

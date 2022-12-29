@@ -6,7 +6,7 @@ import TextBlock from './TextBlock/TextBlock';
 import VideoBlock from './VideoBlock/VideoBlock';
 
 
-const About = () => {
+const About = (props) => {
     return (
         <div className={ls.inner}>
             <BreadCrumbs name={'About'} path={'/about'} />
@@ -15,7 +15,7 @@ const About = () => {
             </div>
             <TextBlock />
             <VideoBlock/>
-            <InDetails/>         
+            <InDetails data={props.data}/>         
         </div>
     )
 }

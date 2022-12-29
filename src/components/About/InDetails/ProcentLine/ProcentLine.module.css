@@ -1,0 +1,22 @@
+.item {
+    color: #363838;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 35px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+}
+.line{
+    height: 2px;
+    border-radius: 4px;
+    background-color: #363838;
+    margin-top: -2px;
+  
+}
