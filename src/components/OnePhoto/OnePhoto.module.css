@@ -1,16 +1,16 @@
 .item1 {
-  grid-column: 1/span 2 ;
+  grid-column: 1/span 3 ;
   grid-row: 1/span 2;
   border: 1px solid inherit;
 }
 .item2 {
-  grid-column: 3/span 2 ;
+  grid-column: 5/span 3 ;
   grid-row: 1/span 2;
   border: 1px solid inherit;
 }
 
 .item {
-  border: 1px solid inherit;
+  grid-column: span 2 ;
 } 
 
 .img {

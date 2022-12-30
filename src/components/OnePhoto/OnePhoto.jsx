@@ -23,7 +23,5 @@ const OnePhoto = (props) => {
         )
     }
     
-    
-
 }
 export default OnePhoto;
