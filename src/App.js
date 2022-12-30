@@ -22,7 +22,7 @@ const App = (props) => {
       <main className='main'>
         <Routes>
           <Route path="/about/*" element={<About data={props.state.aboutPage}/>} />
-          <Route path="/gallery/*" element={<Gallery />} />
+          <Route path="/gallery/*" element={<Gallery data={props.state} dispatch={props.dispatch}/>} />
           <Route path="/home/*" element={<Home data={props.state} dispatch={props.dispatch} />} />
           <Route path="/blog/*" element={<Blog />} />
           <Route path="/contact/*" element={<Contact />} />
