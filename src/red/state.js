@@ -2,6 +2,11 @@ const ADD_EMAIL = 'ADD-EMAIL';
 const UPDATE_NEW_EMAIL = 'UPDATE-NEW-EMAIL';
 const UPDATE_BTN = 'UPDATE-BTN';
 
+const UPDATE_NAME = 'UPDATE-NAME';
+const UPDATE_EMAIL = 'UPDATE-EMAIL';
+const UPDATE_MESSAGE = 'UPDATE-MESSAGE';
+const ADD_CONTACT = 'ADD-CONTACT';
+
 
 let store = {
     _state: {
@@ -164,10 +169,10 @@ let store = {
         },
         aboutPage: {
             detailsData: [
-                { id: 1, name: "Design and technical drawings",num:"80%"},
-                { id: 2, name: "Measurments",num:"70%" },
-                { id: 3, name: "Furniture functionality analysis",num:"75%" },
-                { id: 4, name: "Interior visualization" ,num:"40%"},
+                { id: 1, name: "Design and technical drawings", num: "80%" },
+                { id: 2, name: "Measurments", num: "70%" },
+                { id: 3, name: "Furniture functionality analysis", num: "75%" },
+                { id: 4, name: "Interior visualization", num: "40%" },
             ],
             collectionData: [
                 {
@@ -176,7 +181,7 @@ let store = {
                     title: "Furniture collection",
                     department: "Living room furntiture.",
                     item: "Desk",
-                    width:"350px"
+                    width: "350px"
                 },
 
                 {
@@ -185,7 +190,7 @@ let store = {
                     title: "Truffaut literally trust.",
                     department: "Living room furntiture",
                     item: "Chair",
-                    width:"350px"
+                    width: "350px"
                 },
 
                 {
@@ -194,7 +199,7 @@ let store = {
                     title: "Truffaut literally trust..",
                     department: "Living room furntiture",
                     item: "Chair",
-                    width:"350px"
+                    width: "350px"
                 },
                 {
                     id: 4,
@@ -202,7 +207,7 @@ let store = {
                     title: "Truffaut literally trust...",
                     department: "Living room furntiture",
                     item: "Table",
-                    width:"350px"
+                    width: "350px"
                 },
                 {
                     id: 5,
@@ -210,15 +215,15 @@ let store = {
                     title: "Truffaut literally trust.",
                     department: "Living room furntiture",
                     item: "Sofa",
-                    width:"350px"
+                    width: "350px"
                 },
             ],
             logosData: [
-                { id: 1, name: "logos/object1.svg",width:"350px"},
-                { id: 2, name: "logos/object2.svg",width:"350px"},
-                { id: 3, name: "logos/object3.svg",width:"350px"},
-                { id: 4, name: "logos/object4.svg",width:"350px"},
-                { id: 5, name: "logos/object5.svg",width:"350px"},          
+                { id: 1, name: "logos/object1.svg", width: "350px" },
+                { id: 2, name: "logos/object2.svg", width: "350px" },
+                { id: 3, name: "logos/object3.svg", width: "350px" },
+                { id: 4, name: "logos/object4.svg", width: "350px" },
+                { id: 5, name: "logos/object5.svg", width: "350px" },
             ],
         },
         galleryPage: {
@@ -260,7 +265,7 @@ let store = {
                     { id: 4, name: "2/cha/place4.jpg" },
                     { id: 5, name: "2/cha/place5.jpg" },
                 ],
-            ], 
+            ],
             galleryData2: [
                 [
                     { id: 1, name: "3/bed/place1.jpg" },
@@ -299,7 +304,14 @@ let store = {
                     { id: 4, name: "3/cha/place4.jpg" },
                     { id: 5, name: "3/cha/place5.jpg" },
                 ],
-            ],  
+            ],
+        },
+        contactPage: {
+            contactData: [
+                { id: 1, name: "AAA", email: 'aaa@gmail.cam', message: "aaa1111" },
+                { id: 2, name: "BBB", email: 'bbb@gmail.com', message: "bbb222" }
+            ],
+            newContact: {id:3,name:"",email:"",message:""}
         },
 
         departmentsData: [
@@ -330,7 +342,7 @@ let store = {
             },
 
         ],
-      
+
     },
     _callSubscriber() {
         console.log('new state');
@@ -344,6 +356,7 @@ let store = {
     dispatch(action) {
         console.log('in dispatch');
         let i = 1;
+        let j = 1;
         if (action.type === ADD_EMAIL) {
             const newEmail = {
                 id: i + 1,
@@ -363,6 +376,38 @@ let store = {
             this._callSubscriber(this._state);
             console.log('activCateg=' + this._state.homePage.activeCategory);
         }
+
+
+        else if (action.type === UPDATE_NAME) {
+            console.log('UPDATE_NAME');
+            this._state.contactPage.newContact.name = action.newName;
+            this._callSubscriber(this._state);
+
+        }
+        else if (action.type === UPDATE_EMAIL) {
+            console.log('UPDATE_EMAIL');
+            this._state.contactPage.newContact.email = action.newEmail;
+            this._callSubscriber(this._state);
+        }
+        else if (action.type === UPDATE_MESSAGE) {
+            console.log('UPDATE_MESSAGE');
+            this._state.contactPage.newContact.message = action.newMessage;
+            this._callSubscriber(this._state);
+
+        }
+        else if (action.type === ADD_CONTACT) {
+            const newContactEl = {
+                id: j + 1,
+                name: this._state.contactPage.newContact.name,
+                email: this._state.contactPage.newContact.email,
+                message: this._state.contactPage.newContact.message,
+            }
+            this._state.contactPage.contactData.push(newContactEl);
+            this._callSubscriber(this._state);
+            this._state.contactPage.newContact.name = '';
+            this._state.contactPage.newContact.email = '';
+            this._state.contactPage.newContact.message = '';
+        }
         else alert('Error in action');
     }
 
@@ -372,6 +417,15 @@ let store = {
 export const addEmailActionCreator = () => ({ type: ADD_EMAIL })
 export const updateNewEmailActionCreator = (text) => ({ type: UPDATE_NEW_EMAIL, newText: text })
 export const updateBtnActionCreator = (choice) => ({ type: UPDATE_BTN, id: choice })
+
+export const updateEmailActionCreator = (text) => ({ type: UPDATE_EMAIL, newEmail: text })
+export const updateNameActionCreator = (text) => ({ type: UPDATE_NAME, newName: text })
+export const updateMessageActionCreator = (text) => ({ type: UPDATE_MESSAGE, newMessage: text })
+export const addContactActionCreator = () => ({ type: ADD_CONTACT })
+
+
+
+
 
 export default store;
 

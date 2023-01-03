@@ -1,3 +1,74 @@
 .map{
     margin-bottom: 50px;
 }
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: #363838;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+}
+.title:after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: #6D7278;
+    left: 0;
+    bottom: 0;
+}
+.info { 
+    margin: 23px 0;
+    max-width: 825px;
+    padding-left: 284px;
+}
+
+.line{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.text1{
+    color: #5A5A5A;
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 23px;
+    margin-bottom: 23px;
+}
+.block{
+    margin-bottom: 16px;
+}
+
+
+.newinfo{
+    padding: 6px  10px  6px 18px;
+    border-radius: 21px;
+    background-color: transparent;
+    border: 1px solid  #363838;
+    width:100%;
+}
+
+.newinfo::placeholder{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #A1A1A1;
+}
+.btn{
+    background-color: #363838;
+    border: none;
+    color:#FFFFF0;
+    font-weight: 600;
+    border-radius: 21px;
+    padding: 6px 12px;
+    min-width: 160px;
+    margin-left: 9px;
+    cursor: pointer;
+}

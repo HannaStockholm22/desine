@@ -1,7 +1,7 @@
 import React from 'react';
 import ls from './Footer.module.css';
 import FootMenu from './FootMenu/FootMenu';
-import Social from './Social/Social';
+import Social from '../Social/Social';
 import Subs from './Subs/Subs';
 
 const Footer = (props) => {
