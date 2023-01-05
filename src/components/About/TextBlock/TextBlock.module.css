@@ -3,26 +3,6 @@
     margin-bottom: 40px;
 }
 
-.title {
-    max-width: 822px;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 60px;
-    color: #363838;
-    position: relative;
-    
-}
-
-.title::after {
-    position: absolute;
-    content: '';
-    width: 200px;
-    height: 1px;
-    background: #6D7278;
-    bottom: -20px;
-    left: 0;
-}
 .info { 
     margin: 23px 0;
     max-width: 825px;

@@ -3,7 +3,9 @@ import BreadCrumbs from '../BreadCrumbs/BreadCrumbs';
 import Input from '../Input/Input';
 import MultiSlider from '../MultiSlider/MultiSlider';
 import Social from '../Social/Social';
+import Title from '../Title/Title';
 import ls from './Contact.module.css';
+
 
 
 const Contact = (props) => {
@@ -11,7 +13,6 @@ const Contact = (props) => {
         props.data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} />);
     return (
         <div >
-
             <BreadCrumbs name={'Contact'} path={'/contact'} />
             <div className={ls.map}>
                 <iframe style={{ width: "100%", height: "578" }} width="1920" height="578"
@@ -23,7 +24,7 @@ const Contact = (props) => {
             </div>
             <div className="container">
                 <div className={ls.content}>
-                    <h2 className={ls.title}>Contact Us</h2>
+                    <Title text={'Contact Us'} />
                     <div className={ls.info}>
                         <div className={ls.line}>
                             {socialElements}

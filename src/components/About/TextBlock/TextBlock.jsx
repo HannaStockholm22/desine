@@ -1,11 +1,12 @@
 import React from 'react';
+import Title from '../../Title/Title';
 import ls from './TextBlock.module.css';
 
 const TextBlock = () => {
     return (
         <div className={ls.inner}>
             <div className='container'>
-                <h2 className={ls.title}> Balance in the simple through an informed marriage of design, functional and craft</h2>
+                <Title text={'Balance in the simple through an informed marriage of design, functional and craft'}/>
                 <div className={ls.info}>
                     <p className={ls.text}>Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin
                         coffee street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack
