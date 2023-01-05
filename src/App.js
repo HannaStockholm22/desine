@@ -25,7 +25,7 @@ const App = (props) => {
           <Route path="/gallery/*" element={<Gallery data={props.state} dispatch={props.dispatch}/>} />
           <Route path="/home/*" element={<Home data={props.state} dispatch={props.dispatch} />} />
           <Route path="/blog/*" element={<Blog />} />
-          <Route path="/contact/*" element={<Contact  data={props.state.footerPart}/>} />
+          <Route path="/contact/*" element={<Contact  data={props.state}/>} />
         </Routes>
       </main>
       <footer className='footer'>

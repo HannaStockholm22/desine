@@ -35,7 +35,7 @@
     margin-bottom: 10px;
 }
 .text1{
-    color: #5A5A5A;
+    color: #A1A1A1;
     font-size: 16px;
     line-height: 27px;
     padding-top: 23px;
@@ -44,31 +44,13 @@
 .block{
     margin-bottom: 16px;
 }
-
-
-.newinfo{
-    padding: 6px  10px  6px 18px;
-    border-radius: 21px;
-    background-color: transparent;
-    border: 1px solid  #363838;
-    width:100%;
-}
-
-.newinfo::placeholder{
-    font-family: 'Open Sans',sans-serif;
-    font-weight: 400;
+.phone, .text2{
+    color: #5A5A5A;
     font-size: 16px;
     line-height: 27px;
-    color: #A1A1A1;
+    
 }
-.btn{
-    background-color: #363838;
-    border: none;
-    color:#FFFFF0;
-    font-weight: 600;
-    border-radius: 21px;
-    padding: 6px 12px;
-    min-width: 160px;
-    margin-left: 9px;
-    cursor: pointer;
+.sliderBlock{
+    padding: 100px 0px;
 }
+

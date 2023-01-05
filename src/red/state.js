@@ -311,7 +311,137 @@ let store = {
                 { id: 1, name: "AAA", email: 'aaa@gmail.cam', message: "aaa1111" },
                 { id: 2, name: "BBB", email: 'bbb@gmail.com', message: "bbb222" }
             ],
-            newContact: {id:3,name:"",email:"",message:""}
+            newContact: {id:3,name:"",email:"",message:""},
+            slideData: [
+                {
+                    id: 1,
+                    name: "contact/object1.jpg",
+                    title: "Furniture collection",
+                    department: "Living room furntiture.",
+                    item: "Desk",
+                },
+
+                {
+                    id: 2,
+                    name: "contact/object2.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Chair",
+                },
+
+                {
+                    id: 3,
+                    name: "contact/object3.jpg",
+                    title: "Truffaut literally trust..",
+                    department: "Living room furntiture",
+                    item: "Chair",
+                },
+                {
+                    id: 4,
+                    name: "contact/object4.jpg",
+                    title: "Truffaut literally trust...",
+                    department: "Living room furntiture",
+                    item: "Table"
+                },
+                {
+                    id: 5,
+                    name: "contact/object5.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 6,
+                    name: "contact/object6.jpg",
+                    title: "Truffaut literally trust...",
+                    department: "Living room furntiture",
+                    item: "Table"
+                },
+                {
+                    id: 7,
+                    name: "contact/object7.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 8,
+                    name: "contact/object8.jpg",
+                    title: "Truffaut literally trust...",
+                    department: "Living room furntiture",
+                    item: "Table"
+                },
+                {
+                    id: 9,
+                    name: "contact/object9.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 10,
+                    name: "contact/object10.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 11,
+                    name: "contact/object11.jpg",
+                    title: "Truffaut literally trust...",
+                    department: "Living room furntiture",
+                    item: "Table"
+                },
+                {
+                    id: 12,
+                    name: "contact/object12.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 13,
+                    name: "contact/object13.jpg",
+                    title: "Truffaut literally trust...",
+                    department: "Living room furntiture",
+                    item: "Table"
+                },
+                {
+                    id: 14,
+                    name: "contact/object14.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 15,
+                    name: "contact/object15.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 16,
+                    name: "contact/object16.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 17,
+                    name: "contact/object17.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+                {
+                    id: 18,
+                    name: "contact/object18.jpg",
+                    title: "Truffaut literally trust.",
+                    department: "Living room furntiture",
+                    item: "Sofa",
+                },
+            ],
         },
 
         departmentsData: [

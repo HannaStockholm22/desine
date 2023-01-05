@@ -1,14 +1,17 @@
 import React from 'react';
 import BreadCrumbs from '../BreadCrumbs/BreadCrumbs';
 import Input from '../Input/Input';
+import MultiSlider from '../MultiSlider/MultiSlider';
 import Social from '../Social/Social';
 import ls from './Contact.module.css';
 
+
 const Contact = (props) => {
     let socialElements =
-        props.data.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} />);
+        props.data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} />);
     return (
         <div >
+
             <BreadCrumbs name={'Contact'} path={'/contact'} />
             <div className={ls.map}>
                 <iframe style={{ width: "100%", height: "578" }} width="1920" height="578"
@@ -31,17 +34,21 @@ const Contact = (props) => {
                             copper mug marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock
                         </p>
                         <div className={ls.block}>
-                            <p className={ls.text2}>(415) 829-7934</p>
+                            <a className={ls.phone} href="tel:+14158297934">(415) 829-7934</a>
                             <p className={ls.text2}> 725 Green St</p>
                             <p className={ls.text2}> San Francisco, California(CA), 94133</p>
                         </div>
-                        <div className={ls.forms}>         
-                        <Input  dispatch={props.dispatch} text={props.text}/>   
+                        <div className={ls.forms}>
+                            <Input dispatch={props.dispatch} text={props.text} />
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div className={ls.sliderBlock}>
+                <div className="container-fluid">
+                <MultiSlider data={props.data.contactPage} fade={true} play={true} />
+                </div>
+            </div>
         </div>
     )
 }
