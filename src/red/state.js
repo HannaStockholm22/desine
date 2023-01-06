@@ -443,6 +443,74 @@ let store = {
                 },
             ],
         },
+        blogPage:{
+            postsData: [
+                {
+                    id: 1,
+                    photo: "img1.jpg",
+                    autor: "by Ann Summers",
+                    dataPubl: ["March", "12,", 2020],
+                    category: "Office furniture",
+                    title: "Listicle actually selvage activated charcoal for the drinking vinegar ",
+                    text:"ASDFGHJKLÖÄ"
+                },
+                {
+                    id: 2,
+                    photo: "img2.jpg",
+                    autor: "by Ann Summers",
+                    dataPubl: ["May", "2,", 2020],
+                    category: "Dining room",
+                    title: "Cred selfies edison bulb four dollar toast humblebrag",
+                    text:"zxcvb"
+                },
+                {
+                    id: 3,
+                    photo: "img3.jpg",
+                    autor: "by Lux Morningstar",
+                    dataPubl: ["August", "12,", 2020],
+                    category: "Bedroom Furniture",
+                    title: "Authentic kogi shabby chic",
+                    text:""
+                },
+                {
+                    id: 4,
+                    photo: "img4.jpg",
+                    autor: "by Ann Summers",
+                    dataPubl: ["August", "15,", 2020],
+                    category: "Bedroom Furniture",
+                    title: "Red selfies edison bulb four dollar toast humblebrag for the furniture ",
+                    text:"veryday carry actually neutra authentic kogi shabby chic migas small batch craft be .Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table",
+                },
+                {
+                    id: 5,
+                    photo: "img5.jpg",
+                    autor: "by Ann Summers",
+                    dataPubl: ["August", "18,", 2020],
+                    category: "Office furniture ",
+                    title: "Red selfies edison bulb four dollar toast humblebrag for the furniture ",
+                    text:"veryday carry actually neutra authentic kogi shabby chic migas small batch craft be .Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table",
+                },
+                {
+                    id: 6,
+                    photo: "img6.jpg",
+                    autor: "by Finnagan Morningsta",
+                    dataPubl: ["September", "28,", 2020],
+                    category: "Dining room ",
+                    title: "Red selfies edison bulb four dollar toast humblebrag ",
+                    text:"DFGHJ"
+                },
+                {
+                    id: 7,
+                    photo: "img7.jpg",
+                    autor: "by Ann Summers",
+                    dataPubl: ["September", "30,", 2020],
+                    category: "Dining room",
+                    title: "Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth ",
+                    text:"vbnmk"
+                },
+                
+            ]
+        },
 
         departmentsData: [
             {
@@ -471,6 +539,20 @@ let store = {
                 pic: "cha"
             },
 
+        ],
+        categorysData: [
+            { id: 1 , name: "Dining room", count: 1},
+            { id: 2 , name: "Office furniture", count: 12},
+            { id: 3 , name: "Simple interiror design", count: 2},
+            { id: 4 , name: "Design", count: 4},
+            { id: 5 , name: "Bedroom furniture", count: 1}                    
+        ],
+        tagsData: [
+            { id: 1 , name: "Dining room furniture"},
+            { id: 2 , name: "Chair"},
+            { id: 3 , name: "Table"},
+            { id: 4 , name: "Bedroom"},
+            { id: 5 , name: "Office furniture"}                    
         ],
 
     },

@@ -10,7 +10,7 @@ import ls from './Contact.module.css';
 
 const Contact = (props) => {
     let socialElements =
-        props.data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} />);
+        props.data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} right={'36px'} />);
     return (
         <div >
             <BreadCrumbs name={'Contact'} path={'/contact'} />
@@ -26,8 +26,8 @@ const Contact = (props) => {
                 <div className={ls.content}>
                     <Title text={'Contact Us'} />
                     <div className={ls.info}>
-                        <div className={ls.line}>
-                            {socialElements}
+                        <div className={ls.line}> 
+                                {socialElements}
                         </div>
                         <p className={ls.text1}>
                             Vexillologist vape microdosing freegan pork belly deep v direct trade craysingle-origin
@@ -47,7 +47,7 @@ const Contact = (props) => {
             </div>
             <div className={ls.sliderBlock}>
                 <div className="container-fluid">
-                <MultiSlider data={props.data.contactPage} fade={true} play={true} />
+                    <MultiSlider data={props.data.contactPage} fade={true} play={true} />
                 </div>
             </div>
         </div>

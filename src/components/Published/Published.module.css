@@ -1,0 +1,27 @@
+.line {
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.elem+.elem {
+    padding-left: 3px;
+}
+
+.link {
+    padding: 0 6px;
+    border-left: 1px solid #A1A1A1;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: inherit;
+}
+.hide{
+    opacity: 0;
+    width: 5px;
+    height: 5px;
+}

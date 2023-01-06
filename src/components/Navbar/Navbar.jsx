@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ls from './Navbar.module.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import RightsideMenu from '../RightsideMenu/RightsideMenu';
 
 
@@ -29,8 +29,8 @@ const Navbar = () => {
                 </nav>
 
                 <div className={ls.logo}>
-                    <NavLink className={ls.link} to='/home'>
-                        <img src="images/icon/logo.png" alt="logo" />
+                    <NavLink className={ls.link}  to='/home'>
+                            <img src="images/icon/logo.png" alt="logo" />
                     </NavLink>
                 </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>  
-    )   
+        </div>
+    )
 }
 export default Navbar;
