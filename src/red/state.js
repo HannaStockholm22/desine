@@ -452,7 +452,7 @@ let store = {
                     dataPubl: ["March", "12,", 2020],
                     category: "Office furniture",
                     title: "Listicle actually selvage activated charcoal for the drinking vinegar ",
-                    text:"ASDFGHJKLÖÄ"
+                    text:"Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table."
                 },
                 {
                     id: 2,
@@ -460,8 +460,8 @@ let store = {
                     autor: "by Ann Summers",
                     dataPubl: ["May", "2,", 2020],
                     category: "Dining room",
-                    title: "Cred selfies edison bulb four dollar toast humblebrag",
-                    text:"zxcvb"
+                    title: "Authentic kogi shabby chic",
+                    text:""
                 },
                 {
                     id: 3,
@@ -469,8 +469,8 @@ let store = {
                     autor: "by Lux Morningstar",
                     dataPubl: ["August", "12,", 2020],
                     category: "Bedroom Furniture",
-                    title: "Authentic kogi shabby chic",
-                    text:""
+                    title: "Cred selfies edison bulb four dollar toast humblebrag",
+                    text:"Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table"
                 },
                 {
                     id: 4,
@@ -497,7 +497,7 @@ let store = {
                     dataPubl: ["September", "28,", 2020],
                     category: "Dining room ",
                     title: "Red selfies edison bulb four dollar toast humblebrag ",
-                    text:"DFGHJ"
+                    text:"Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table"
                 },
                 {
                     id: 7,
@@ -506,7 +506,7 @@ let store = {
                     dataPubl: ["September", "30,", 2020],
                     category: "Dining room",
                     title: "Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth ",
-                    text:"vbnmk"
+                    text:"Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table."         
                 },
                 
             ]

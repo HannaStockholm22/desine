@@ -8,3 +8,15 @@ padding: 59px  0 65px;
     width:350px;
     margin-left: 30px;
 }
+
+.page {
+    display: block;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #363838;
+    
+}
