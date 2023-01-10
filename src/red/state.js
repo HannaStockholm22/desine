@@ -6,6 +6,8 @@ const UPDATE_NAME = 'UPDATE-NAME';
 const UPDATE_EMAIL = 'UPDATE-EMAIL';
 const UPDATE_MESSAGE = 'UPDATE-MESSAGE';
 const ADD_CONTACT = 'ADD-CONTACT';
+const UPDATE_PAGE_NUMBER ='UPDATE-PAGE-NUMBER';
+const UPDATE_PAGE_HEIGHT='UPDATE-PAGE-HEIGHT';
 
 
 let store = {
@@ -509,7 +511,9 @@ let store = {
                     text:"Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table."         
                 },
                 
-            ]
+            ],
+            activePage:0,
+            onPage:3,
         },
 
         departmentsData: [
@@ -554,6 +558,7 @@ let store = {
             { id: 4 , name: "Bedroom"},
             { id: 5 , name: "Office furniture"}                    
         ],
+        pageHeight: 1000,
 
     },
     _callSubscriber() {
@@ -620,6 +625,16 @@ let store = {
             this._state.contactPage.newContact.email = '';
             this._state.contactPage.newContact.message = '';
         }
+        else if (action.type === UPDATE_PAGE_NUMBER) {
+            this._state.blogPage.activePage = action.id;
+            this._callSubscriber(this._state);
+           
+        }
+        else if (action.type === UPDATE_PAGE_HEIGHT) {
+            this._state.pageHeight = action.height;
+            this._callSubscriber(this._state);
+           
+        }
         else alert('Error in action');
     }
 
@@ -635,7 +650,8 @@ export const updateNameActionCreator = (text) => ({ type: UPDATE_NAME, newName: 
 export const updateMessageActionCreator = (text) => ({ type: UPDATE_MESSAGE, newMessage: text })
 export const addContactActionCreator = () => ({ type: ADD_CONTACT })
 
-
+export const updatePageNumberActionCreator=(choice)=>({ type: UPDATE_PAGE_NUMBER, id: choice })
+export const updatePageHeightActionCreator=(num)=>({type: UPDATE_PAGE_HEIGHT, height:num})
 
 
 

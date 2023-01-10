@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import RightsideMenu from '../RightsideMenu/RightsideMenu';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [isActive, setIsActive] = useState(false);
 
@@ -16,6 +16,11 @@ const Navbar = () => {
         setIsActive(!isActive);
     };
 
+    const newHeight = {
+       /* height: props.data.pageHeight-40,   for 100% height of the page  we use props*/
+       height:1020
+    };
+   
     return (
         <div className='container'>
             <div className={ls.inner}>
@@ -29,8 +34,8 @@ const Navbar = () => {
                 </nav>
 
                 <div className={ls.logo}>
-                    <NavLink className={ls.link}  to='/home'>
-                            <img src="images/icon/logo.png" alt="logo" />
+                    <NavLink className={ls.link} to='/home'>
+                        <img src="images/icon/logo.png" alt="logo" />
                     </NavLink>
                 </div>
 
@@ -47,7 +52,7 @@ const Navbar = () => {
                     <img src="images/icon/icon_menu.svg" alt="icon_menu" />
                 </button>
                 <div className={isActive ? ls.sideMenu : ls.sideMenuClose}>
-                    <div className={ls.sideMenu}>
+                    <div className={ls.sideMenu} style={newHeight} >
                         <button className={ls.cross} onClick={toggleClass}>
                             <img src="images/rightside/path.svg" alt="cross" />
                         </button>

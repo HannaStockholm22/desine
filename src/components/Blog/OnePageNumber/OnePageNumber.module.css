@@ -1,0 +1,28 @@
+.radio {
+	display: inline-block;
+	margin: 0 5px;
+}
+.input {
+	display: none;
+}
+.label {
+	display: inline-block;
+    background-color:inherit;
+    color: #8F8D8D;
+    font-size: 14px;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 2px;
+   
+}
+/* Checked */
+.input:checked + label {
+   color:black;
+    transition: all .5s;
+}
+/* Hover */
+.label:hover {
+	color:#454647;
+    transition: all .5s;
+}
+ 

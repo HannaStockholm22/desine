@@ -12,8 +12,9 @@ const RightsideMenu = () => {
     const toggleClass = () => {
         setIsActive(!isActive);
     };
+
     return (    
-        <div className={ls.inner}>
+        <div className={ls.inner} >
             <div className={ls.content}>
                 <NavLink className={ls.link} to='/home'>
                     <img src="images/rightside/biglogo.png" alt="biglogo" />

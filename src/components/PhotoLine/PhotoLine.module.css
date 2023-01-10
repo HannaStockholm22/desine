@@ -9,7 +9,7 @@
 .img {
     object-fit: cover;
     padding: 0;
-    max-width: 310px;
+    max-width: 250px;
 }
 
 .info {

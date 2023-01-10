@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { createRef, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -14,18 +14,22 @@ import { Route, Routes } from 'react-router-dom';
 
 const App = (props) => {
 
+ //   height = Math.trunc(refComponent.current.getBoundingClientRect().height);
+ 
   return (
-    <div className='wrapper'>
+    <div className='wrapper' >
       <header className='header'>
-        <Navbar />
+      <Navbar data={props.state} />
+
       </header>
       <main className='main'>
         <Routes >
-          <Route path="/about/*" element={<About data={props.state.aboutPage}/>} />
-          <Route path="/gallery/*" element={<Gallery data={props.state} dispatch={props.dispatch}/>} />
+          <Route path="/" element={<Home data={props.state} dispatch={props.dispatch} />} />
+          <Route path="/about/*" element={<About data={props.state.aboutPage} />} />
+          <Route path="/gallery/*" element={<Gallery data={props.state} dispatch={props.dispatch} />} />
           <Route path="/home/*" element={<Home data={props.state} dispatch={props.dispatch} />} />
-          <Route path="/blog/*" element={<Blog data={props.state} dispatch={props.dispatch}/>} />
-          <Route path="/contact/*" element={<Contact  data={props.state}/>} />
+          <Route path="/blog/*" element={<Blog data={props.state} dispatch={props.dispatch} />} />
+          <Route path="/contact/*" element={<Contact data={props.state} />} />
         </Routes>
       </main>
       <footer className='footer'>
