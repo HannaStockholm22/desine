@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ls from './Navbar.module.css';
 import { Link, NavLink } from 'react-router-dom';
-import RightsideMenu from '../RightsideMenu/RightsideMenu';
+import RightSideMenu from '../RightSideMenu/RightSideMenu';
 
 
 const Navbar = (props) => {
@@ -56,7 +56,7 @@ const Navbar = (props) => {
                         <button className={ls.cross} onClick={toggleClass}>
                             <img src="images/rightside/path.svg" alt="cross" />
                         </button>
-                        <RightsideMenu />
+                        <RightSideMenu />
                     </div>
                 </div>
             </div>

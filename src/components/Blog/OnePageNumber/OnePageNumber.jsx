@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ls from './OnePageNumber.module.css';
-import { updatePageNumberActionCreator } from './../../../red/state';
+import { updatePageNumberActionCreator } from './../../../store/state';
 
 const OnePageNumber = (props) => {
     const inputEl = useRef();

@@ -1,13 +1,13 @@
 import React from 'react';
 import ls from './Subs.module.css';
-import { addEmailActionCreator, updateNewEmailActionCreator } from './../../../red/state.js';
+import { addEmailActionCreator, updateNewEmailActionCreator } from './../../../store/state.js';
 
 const Subs = (props) => {
     const newEmailEl = React.createRef();
     const addEmail = () => {
         props.dispatch(addEmailActionCreator());
     }
-    const onEmailChenge = () => {
+    const onEmailChange = () => {  // typo (this word developers use when there ia an error in spelling)
         let text = newEmailEl.current.value;
         props.dispatch(updateNewEmailActionCreator(text));
     }
@@ -25,7 +25,7 @@ const Subs = (props) => {
             </div>
             
             <form className={ls.form}>
-                <input className={ls.input} onChange={onEmailChenge} ref={newEmailEl} value={props.text}
+                <input className={ls.input} onChange={onEmailChange} ref={newEmailEl} value={props.text}
                     type="email" placeholder='Subscribe by email' />
                 <button className={ls.btn} onClick={addEmail} type="submit" >
                     Send

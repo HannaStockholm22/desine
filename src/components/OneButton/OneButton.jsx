@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ls from './OneButton.module.css';
-import { updateBtnActionCreator } from './../../red/state';
+import { updateBtnActionCreator } from './../../store/state'; //folders and files should have explicit names, so any other developers can read and understand what it contains, especially configurations files/folders like store
 
 const OneButton = (props) => {
 
@@ -10,7 +10,7 @@ const OneButton = (props) => {
 
     console.log('OneButton id=' + props.id + '   act=' + props.active);
 
-    if (props.id == props.active) check = true;
+    if (props.id === props.active) check = true; //good practice to use === instead of ==
 
     const onClickBtn = () => {
         choice = inputEl.current.value;

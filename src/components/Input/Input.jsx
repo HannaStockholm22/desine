@@ -1,6 +1,6 @@
 import React from 'react';
 import ls from './Input.module.css';
-import { addContactActionCreator, updateEmailActionCreator, updateNameActionCreator, updateMessageActionCreator } from './../../red/state.js';
+import { addContactActionCreator, updateEmailActionCreator, updateNameActionCreator, updateMessageActionCreator } from './../../store/state.js';
 
 const Input = (props) => {
 

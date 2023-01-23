@@ -1,8 +1,8 @@
 import React , { useState,useEffect } from 'react';
-import ls from './RightsideMenu.module.css';
+import ls from './RightSideMenu.module.css';
 import { NavLink } from 'react-router-dom';
 
-const RightsideMenu = () => {
+const RightSideMenu = () => { //camel case
     const [isActive, setIsActive] = useState(false); 
     
     useEffect(() => {
@@ -32,4 +32,4 @@ const RightsideMenu = () => {
             </div>   
     )
 }
-export default RightsideMenu;
+export default RightSideMenu;
