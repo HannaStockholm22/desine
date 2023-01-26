@@ -4,8 +4,8 @@ import ls from './InDetails.module.css';
 import ProcentLine from './ProcentLine/ProcentLine';
 
 
-const InDetails = (props) => {
-    let DetailsElements = props.data.detailsData.map(el => < ProcentLine name={el.name} num={el.num}/>);
+const InDetails = ({data}) => {
+    let DetailsElements = data.detailsData.map(el => < ProcentLine name={el.name} num={el.num}/>);
 
     return (
         <div className={ls.inner}>
