@@ -6,12 +6,12 @@ import Social from '../Social/Social';
 import Title from '../Title/Title';
 import ls from './Contact.module.css';
 
+const Contact = ({data, dispatch, text}) => {
+   let socialElements =
+        data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} right={'36px'} />);
+   
 
-
-const Contact = (props) => {
-    let socialElements =
-        props.data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} right={'36px'} />);
-    return (
+  return (
         <div >
             <BreadCrumbs name={'Contact'} path={'/contact'} />
             <div className={ls.map}>
@@ -27,7 +27,7 @@ const Contact = (props) => {
                     <Title text={'Contact Us'} />
                     <div className={ls.info}>
                         <div className={ls.line}> 
-                                {socialElements}
+                        {socialElements}
                         </div>
                         <p className={ls.text1}>
                             Vexillologist vape microdosing freegan pork belly deep v direct trade craysingle-origin
@@ -40,14 +40,14 @@ const Contact = (props) => {
                             <p className={ls.text2}> San Francisco, California(CA), 94133</p>
                         </div>
                         <div className={ls.forms}>
-                            <Input dispatch={props.dispatch} text={props.text} />
+                        <Input dispatch={dispatch} text={text} />
                         </div>
                     </div>
                 </div>
             </div>
             <div className={ls.sliderBlock}>
                 <div className="container-fluid">
-                    <MultiSlider data={props.data.contactPage} fade={true} play={true} />
+                    <MultiSlider data={data.contactPage} fade={true} play={true} />
                 </div>
             </div>
         </div>

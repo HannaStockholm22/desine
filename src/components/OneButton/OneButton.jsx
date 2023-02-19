@@ -2,26 +2,26 @@ import React, { useRef } from 'react';
 import ls from './OneButton.module.css';
 import { updateBtnActionCreator } from './../../red/state';
 
-const OneButton = (props) => {
+const OneButton = ({id, active, dispatch, name}) => {
 
-    let choice = props.id;
+    let choice = id;
     const inputEl = useRef();
     let check;
 
-    console.log('OneButton id=' + props.id + '   act=' + props.active);
+    console.log('OneButton id=' + id + '   act=' + active);
 
-    if (props.id == props.active) check = true;
+    if (id == active) check = true;
 
     const onClickBtn = () => {
         choice = inputEl.current.value;
         console.log('choice=', choice);
-        props.dispatch(updateBtnActionCreator(choice));
+        dispatch(updateBtnActionCreator(choice));
     }
 
     return (
         <div className={ls.radio} >
-            <input className={ls.input} id={props.id} ref={inputEl} type="radio" name="radio" value={props.id} checked={check}/>
-            <label className={ls.label}for={props.id} onClick={onClickBtn} >{props.name}</label>
+            <input className={ls.input} id={id} ref={inputEl} type="radio" name="radio" value={id} checked={check}/>
+            <label className={ls.label} for={id} onClick={onClickBtn} >{name}</label>
          
         </div>
     )

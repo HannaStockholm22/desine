@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import RightsideMenu from '../RightsideMenu/RightsideMenu';
 
 
-const Navbar = (props) => {
+const Navbar = () => {
 
     const [isActive, setIsActive] = useState(false);
 

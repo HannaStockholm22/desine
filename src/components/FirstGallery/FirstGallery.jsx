@@ -3,9 +3,9 @@ import OneButton from '../OneButton/OneButton';
 import PhotoGrid from '../PhotoGrid/PhotoGrid';
 import ls from './FirstGallery.module.css';
 
-const FirstGallery = (props) => {
+const FirstGallery = ({data, place, activeCategory, dispatch}) => {
   
-   let ButtonLineElements = props.data.departmentsData.map(el => <OneButton name={el.name}  id={el.id} active={props.activeCategory} dispatch={props.dispatch}/>);
+   let ButtonLineElements = data.departmentsData.map(el => <OneButton name={el.name}  id={el.id} active={activeCategory} dispatch={dispatch}/>);
     return (
         <div >
             <div className='container' >
@@ -13,7 +13,7 @@ const FirstGallery = (props) => {
                  {ButtonLineElements}
                 </div>
             </div>
-          <PhotoGrid  place={props.place} left={true}/>
+          <PhotoGrid  place={place} left={true}/>
         </div>
     )
 }

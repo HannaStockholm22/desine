@@ -3,16 +3,16 @@ import PostsCard from '../PostsCard/PostsCard';
 import ls from './PageContent.module.css';
 
 
-const PageContent = (props) => {
+const PageContent = ({data}) => {
     /* DON'T USE IT NOW */
-    const pageID = props.data.blogPage.activePage;
-    const onPage = props.data.blogPage.onPage;
-    const length = props.data.blogPage.postsData.length;
+    const pageID = data.blogPage.activePage;
+    const onPage = data.blogPage.onPage;
+    const length = data.blogPage.postsData.length;
 
     const start = pageID * onPage;
     let end = start + onPage;
-    if (end > length) end = props.data.blogPage.postsData.length;
-    const postsEl = props.data.blogPage.postsData.slice(start, end).map(el => <PostsCard data={el} />);
+    if (end > length) end = data.blogPage.postsData.length;
+    const postsEl = data.blogPage.postsData.slice(start, end).map(el => <PostsCard data={el} />);
 
     return (
         <div>

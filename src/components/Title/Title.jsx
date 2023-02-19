@@ -1,10 +1,10 @@
 import React from 'react';
 import ls from './Title.module.css';
 
-const Title = (props) => {
+const Title = ({text}) => {
     return (
         <h2 className={ls.title}>
-            {props.text}
+            {text}
         </h2>
     )
 }

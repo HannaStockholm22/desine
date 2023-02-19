@@ -7,19 +7,19 @@ import VideoBlock from './VideoBlock/VideoBlock';
 import PhotoLine from '../PhotoLine/PhotoLine';
 import LogoLine from '../LogoLine/LogoLine';
 
-const About = (props) => {
-    let PhotoElements = props.data.collectionData.map(el => <PhotoLine name={el.name} title={el.title} department={el.department} item={el.item} />);
-    let LogoElements = props.data.logosData.map(el => <LogoLine name={el.name}  />);
+const About = ({data}) => {
+    let PhotoElements = data.collectionData.map(el => <PhotoLine name={el.name} title={el.title} department={el.department} item={el.item} />);
+    let LogoElements = data.logosData.map(el => <LogoLine name={el.name}  />);
 
     return (
         <div className={ls.inner}>
-            <BreadCrumbs name={'About'} path={'/about'} />
+            <BreadCrumbs name={'About'} path={'/about'}/>
             <div className={ls.section}>
                 <h1 className={ls.title}> About Us</h1>
             </div>
             <TextBlock />
             <VideoBlock />
-            <InDetails data={props.data} />
+            <InDetails data={data} />
             <div className="container-fluid">
                 <div className={ls.wrapper}>
                     {LogoElements}

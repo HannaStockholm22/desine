@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import SlideElement from './SlideElement/SlideElement';
 
 
-const OneSlider = (props) => {
+const OneSlider = ({data}) => {
     const settings = {
         dots: true,
         //fade: true,
@@ -16,7 +16,7 @@ const OneSlider = (props) => {
     }
 
     let slideElements =
-        props.data.slideData.map(el => {
+        data.slideData.map(el => {
             return (
                 <div>
                     <SlideElement name={el.name} title={el.title} />

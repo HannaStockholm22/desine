@@ -7,17 +7,17 @@ import Inspiration from './Inspiration/Inspiration';
 import Slogan from './Slogan/Slogan';
 import Way from './Way/Way';
 
-const Home = (props) => {
-    const i = props.data.homePage.activeCategory;
-    const  place = props.data.homePage.galleryData[i];
+const Home = ({data,dispatch}) => {
+    const i = data.homePage.activeCategory;
+    const  place = data.homePage.galleryData[i];
     return (
         <div className={ls.inner}>
-            <OneSlider data={props.data.homePage} />
-            <Collection data={props.data.homePage} />
+            <OneSlider data={data.homePage} />
+            <Collection data={data.homePage} />
             <Slogan />
-            <Way wayData={props.data.homePage.wayData} />
-            <FirstGallery data={props.data} dispatch={props.dispatch} place={place} activeCategory={i} />
-            <Inspiration data={props.data.homePage} />
+            <Way wayData={data.homePage.wayData} />
+            <FirstGallery data={data} dispatch={dispatch} place={place} activeCategory={i} />
+            <Inspiration data={data.homePage} />
         </div>
     )
 }

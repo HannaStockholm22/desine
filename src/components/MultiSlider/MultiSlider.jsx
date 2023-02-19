@@ -5,14 +5,13 @@ import './../slick-theme.css';
 import SliderEl from './SliderEl/SliderEl';
 import ls from './MultiSlider.module.css';
 
-const MultiSlider = (props) => {
+const MultiSlider = ({play,data}) => {
     const settings = {
         dots: true,
-       // fade: props.fade,
         infinite: true,
         slidesToShow: 7,
         slidesToScroll: 6,
-        autoplay: props.play,
+        autoplay: play,
         autoplaySpeed: 2000,
         responsive: [
           {
@@ -62,7 +61,7 @@ const MultiSlider = (props) => {
 
     return (
             <Slider {...settings}>    
-             { props.data.slideData.map(el => <SliderEl name={el.name} title={el.title}  />)}  
+             { data.slideData.map(el => <SliderEl name={el.name} title={el.title}  />)}  
             </Slider>
        
     )

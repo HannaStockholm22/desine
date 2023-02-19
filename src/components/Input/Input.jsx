@@ -2,27 +2,27 @@ import React from 'react';
 import ls from './Input.module.css';
 import { addContactActionCreator, updateEmailActionCreator, updateNameActionCreator, updateMessageActionCreator } from './../../red/state.js';
 
-const Input = (props) => {
+const Input = ({dispatch,text}) => {
 
     const newEmailEl = React.createRef();
     const newNameEl = React.createRef();
     const newMessEl = React.createRef();
 
     const addInfo = () => {
-        props.dispatch(addContactActionCreator());
+        dispatch(addContactActionCreator());
     }
 
     const onEmailChenge = () => {
         let text = newEmailEl.current.value;
-        props.dispatch(updateEmailActionCreator(text));
+        dispatch(updateEmailActionCreator(text));
     }
     const onNameChenge = () => {
         let text = newNameEl.current.value;
-        props.dispatch(updateNameActionCreator(text));
+        dispatch(updateNameActionCreator(text));
     }
     const onMessChenge = () => {
         let text = newMessEl.current.value;
-        props.dispatch(updateMessageActionCreator(text));
+        dispatch(updateMessageActionCreator(text));
     }
 
 
@@ -37,14 +37,14 @@ const Input = (props) => {
 
             <form className={ls.forms}>
                 <div className={ls.blocktop}>
-                    <input className={ls.input} onChange={onNameChenge} ref={newNameEl} value={props.text}
+                    <input className={ls.input} onChange={onNameChenge} ref={newNameEl} value={text}
                         placeholder='Your name' />
-                    <input className={ls.input} onChange={onEmailChenge} ref={newEmailEl} value={props.text}
+                    <input className={ls.input} onChange={onEmailChenge} ref={newEmailEl} value={text}
                         type="email" placeholder='Your email' />
                 </div>
 
                 <div className={ls.blockbottom}>
-                    <textarea className={ls.textarea} onChange={onMessChenge} ref={newMessEl} value={props.text}
+                    <textarea className={ls.textarea} onChange={onMessChenge} ref={newMessEl} value={text}
                         placeholder='Your message' />
                 </div>
 

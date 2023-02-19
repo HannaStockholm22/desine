@@ -4,18 +4,18 @@ import FootMenu from './FootMenu/FootMenu';
 import Social from '../Social/Social';
 import Subs from './Subs/Subs';
 
-const Footer = (props) => {
+const Footer = ({data,dispatch}) => {
 
     let socialElements = 
-    props.data.socialData.map(el => <Social text={el.text} id={el.id} path={el.path} name={el.name}/>);
-    let footMenuElements = props.data.footMenuData.map(el => <FootMenu name={el.name} path={el.path}/>);
+    data.socialData.map(el => <Social text={el.text} id={el.id} path={el.path} name={el.name} />);
+    let footMenuElements = data.footMenuData.map(el => <FootMenu name={el.name} path={el.path}/>);
 
     return (
         <div >
             <div className={ls.content}>
                 <div className='container'>
                     <div className={ls.inner}>
-                        <Subs dispatch={props.dispatch} text={props.data.newEmailText}/>
+                        <Subs dispatch={dispatch} text={data.newEmailText}/>
                         <div className={ls.socialEl}>
                             {socialElements}
                         </div>

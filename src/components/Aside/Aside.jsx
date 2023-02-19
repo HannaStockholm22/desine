@@ -5,8 +5,8 @@ import { Link, NavLink } from 'react-router-dom';
 import Social from '../Social/Social';
 
 
-const Aside = (props) => {
-    const lastPostsData = props.data.blogPage.postsData.slice(-3);
+const Aside = ({data}) => {
+    const lastPostsData = data.blogPage.postsData.slice(-3);
     const lastPostEl = lastPostsData.reverse().map(el => {
         return (
             <div>
@@ -18,7 +18,7 @@ const Aside = (props) => {
         )
     });
 
-    let tagElements = props.data.tagsData.map(el => {
+    let tagElements = data.tagsData.map(el => {
         return (   
                 < NavLink className={ls.tagLink} to='/blog' name={el.name} >
                     {el.name}
@@ -27,7 +27,7 @@ const Aside = (props) => {
     });
 
     let socialElements =
-        props.data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} right={'5px'}/>);
+        data.footerPart.socialData.map(el => <Social id={el.id} path={el.path} name={el.name} right={'5px'}/>);
 
 
     return (
@@ -42,7 +42,7 @@ const Aside = (props) => {
 
             <div className={ls.category}>
                 <h4 className={ls.title}>Categories</h4>
-                {props.data.categorysData.map(el => <NavLink className={ls.link} to='/blog'> {el.name} ({el.count}) </NavLink>)}
+                {data.categorysData.map(el => <NavLink className={ls.link} to='/blog'> {el.name} ({el.count}) </NavLink>)}
             </div>
 
             <div className={ls.lastPosts}>

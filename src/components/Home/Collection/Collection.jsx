@@ -2,9 +2,9 @@ import React from 'react';
 import PhotoLine from '../../PhotoLine/PhotoLine';
 import ls from './Collection.module.css';
 
-const Collection = (props) => {
+const Collection = ({data}) => {
     let PhotoElements =
-        props.data.collectionData.map(el => <PhotoLine name={el.name} title={el.title} department={el.department} item={el.item} />);
+        data.collectionData.map(el => <PhotoLine name={el.name} title={el.title} department={el.department} item={el.item} />);
     return (
         <div className={ls.collection}>
             <div className='container-fluid'>

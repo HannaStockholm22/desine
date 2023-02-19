@@ -5,12 +5,14 @@ import ls from './Blog.module.css';
 import OnePageNumber from './OnePageNumber/OnePageNumber';
 import PostsCard from './PostsCard/PostsCard';
 
-const Blog = (props) => {
+
+
+const Blog = ({data}) => {
 
     //const [number, setNumber] = useState(pageNumber);
     //inputEl = useRef();
 
-    const point = props.data.blogPage;
+    const point = data.blogPage;
     const pageNumber = point.activePage;
     const onPage = point.onPage;
     const length = point.postsData.length;
@@ -40,7 +42,7 @@ return (
                     </div>
                 </div>
                 <aside className={ls.aside}>
-                    <Aside data={props.data} />
+                    <Aside data={data} />
                 </aside>
             </div>
         </div>

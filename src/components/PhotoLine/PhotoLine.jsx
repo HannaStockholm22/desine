@@ -1,10 +1,9 @@
 import React from 'react';
 import ls from './PhotoLine.module.css';
 
-const PhotoLine = (props) => {
-    const pathpub = `images/line/${props.name}`;
-    const fulltext = `${props.department} | ${props.item} `;
-    const title = props.title;
+const PhotoLine = ({name,department,item,title}) => {
+    const pathpub = `images/line/${name}`;
+    const fulltext = `${department} | ${item} `;
 
     return (
         <div >

@@ -2,14 +2,14 @@ import React from 'react';
 import ls from './Subs.module.css';
 import { addEmailActionCreator, updateNewEmailActionCreator } from './../../../red/state.js';
 
-const Subs = (props) => {
+const Subs = ({dispatch, text }) => {
     const newEmailEl = React.createRef();
     const addEmail = () => {
-        props.dispatch(addEmailActionCreator());
+        dispatch(addEmailActionCreator());
     }
     const onEmailChenge = () => {
         let text = newEmailEl.current.value;
-        props.dispatch(updateNewEmailActionCreator(text));
+        dispatch(updateNewEmailActionCreator(text));
     }
     return (
         <div className={ls.inner}>
@@ -25,7 +25,7 @@ const Subs = (props) => {
             </div>
             
             <form className={ls.form}>
-                <input className={ls.input} onChange={onEmailChenge} ref={newEmailEl} value={props.text}
+                <input className={ls.input} onChange={onEmailChenge} ref={newEmailEl} value={text}
                     type="email" placeholder='Subscribe by email' />
                 <button className={ls.btn} onClick={addEmail} type="submit" >
                     Send
