@@ -1,6 +1,6 @@
 .line {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 14px;
     line-height: 16px;
     font-weight: 600;

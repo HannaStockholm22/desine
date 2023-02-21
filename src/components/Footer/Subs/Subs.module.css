@@ -52,4 +52,14 @@
     cursor: pointer;
 }
 
-
+@media (max-width:578px) {
+    .form{
+        display: block;
+    } 
+    .btn{
+        margin: 15px 0;
+    }
+    .inner{
+        width: 95%;
+    }
+}

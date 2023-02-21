@@ -10,12 +10,19 @@ a {
 }
 .inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.block{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+
 }
 .socialEl {
   width: 125px;
   margin-right: auto;
   margin-left: 125px;
+
 }
 .footMenuEl {
   margin-right: 60px;
@@ -28,3 +35,22 @@ a {
   margin: 0px;
   padding: 42px 0 41px;
 }
+
+@media (max-width:1028px) {
+  .inner {
+    display: block;  
+  }
+
+  .block{
+    width: 65%;
+  }
+
+  .socialEl {
+    width: 125px;
+    margin-right: auto;
+    margin-left: 0px;
+  }  
+}
+
+
+

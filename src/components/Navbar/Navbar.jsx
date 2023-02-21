@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ls from './Navbar.module.css';
-import { Link, NavLink } from 'react-router-dom';
-import RightsideMenu from '../RightsideMenu/RightsideMenu';
+import { NavLink } from 'react-router-dom';
+import RightsideMenu from '../RightSideMenu/RightSideMenu';
 
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <nav className={ls.list} >
                     <div className={ls.item}>
                         <NavLink className={navData => navData.isActive ? ls.active : ls.link} to='/blog'> Blog</NavLink>
-                    </div>
+                   </div>
                     <div className={ls.item}>
                         <NavLink className={navData => navData.isActive ? ls.active : ls.link} to='/contact'>Contact</NavLink>
                     </div>
@@ -51,6 +51,8 @@ const Navbar = () => {
                 <button className={ls.btn} onClick={toggleClass} >
                     <img src="images/icon/icon_menu.svg" alt="icon_menu" />
                 </button>
+
+
                 <div className={isActive ? ls.sideMenu : ls.sideMenuClose}>
                     <div className={ls.sideMenu} style={newHeight} >
                         <button className={ls.cross} onClick={toggleClass}>

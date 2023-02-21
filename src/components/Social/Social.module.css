@@ -6,7 +6,7 @@
 .inner{
     margin-bottom: 0px;
     display: flex;
-    justify-content: start;   
+    justify-content: flex-start;   
 }
 .link{   
     font-weight: 600;

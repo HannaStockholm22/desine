@@ -1,18 +1,18 @@
 import React from 'react';
-import { redirect } from 'react-router-dom';
+
 import ls from './Social.module.css';
 
 const Social = ({text, path, name, right}) => {
-    const pathpub = `images/icon/${name}`;
+    const pathPub = `images/icon/${name}`;
     const addGap = {
         paddingRight: right,   
     }
 
     return (
         <div className={ls.item} style={addGap}>
-            <a className={ls.link} href={path} target="_blank">
+            <a className={ls.link} href={path} target="_blank" rel="noreferrer">
                 <div className={ls.inner}>
-                    <img className={ls.img} src={pathpub} alt="icon" />
+                    <img className={ls.img} src={pathPub} alt="icon" />
                     <span>{text}</span>
                 </div>
             </a>

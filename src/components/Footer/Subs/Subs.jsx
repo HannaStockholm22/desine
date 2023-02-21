@@ -1,6 +1,6 @@
 import React from 'react';
 import ls from './Subs.module.css';
-import { addEmailActionCreator, updateNewEmailActionCreator } from './../../../red/state.js';
+import { addEmailActionCreator, updateNewEmailActionCreator } from './../../../store/state.js';
 
 const Subs = ({dispatch, text }) => {
     const newEmailEl = React.createRef();

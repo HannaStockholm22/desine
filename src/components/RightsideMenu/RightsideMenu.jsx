@@ -1,17 +1,14 @@
 import React , { useState,useEffect } from 'react';
-import ls from './RightsideMenu.module.css';
+import ls from './RightSideMenu.module.css';
 import { NavLink } from 'react-router-dom';
 
-const RightsideMenu = () => {
+const RightSideMenu = () => {
     const [isActive, setIsActive] = useState(false); 
     
     useEffect(() => {
         console.log(isActive);
       }, [isActive]);
 
-    const toggleClass = () => {
-        setIsActive(!isActive);
-    };
 
     return (    
         <div className={ls.inner} >
@@ -32,4 +29,4 @@ const RightsideMenu = () => {
             </div>   
     )
 }
-export default RightsideMenu;
+export default RightSideMenu;

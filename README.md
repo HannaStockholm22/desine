@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The website for a furniture company. The layout of this site was built in Figma.
+
 ## Available Scripts
 
 In the project directory, you can run:

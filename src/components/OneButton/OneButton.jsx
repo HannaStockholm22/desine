@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ls from './OneButton.module.css';
-import { updateBtnActionCreator } from './../../red/state';
+import { updateBtnActionCreator } from '../../store/state';
 
 const OneButton = ({id, active, dispatch, name}) => {
 
@@ -10,7 +10,7 @@ const OneButton = ({id, active, dispatch, name}) => {
 
     console.log('OneButton id=' + id + '   act=' + active);
 
-    if (id == active) check = true;
+    if (id === active) check = true;
 
     const onClickBtn = () => {
         choice = inputEl.current.value;

@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
 import ls from './OnePageNumber.module.css';
-import { updatePageNumberActionCreator } from './../../../red/state';
+import { updatePageNumberActionCreator } from './../../../store/state';
 
 const OnePageNumber = ({id,activePage,dispatch}) => {
     const inputEl = useRef();
     let choice = id;
     let check;
 
-    if (activePage == id) check = true;
+    if (activePage === id) check = true;
    
 
     const onClickBtn = () => {
