@@ -2,10 +2,10 @@ import React from 'react';
 import ls from './SlideElement.module.css';
 
 const SlideElement = ({name,title}) => {
-    const pathpub = `images/slider/${name}`;
+    const pathPub = `images/slider/${name}`;
     return (
         <div className={ls.item}>
-            <img className={ls.img}src={pathpub} alt="img" />
+            <img className={ls.img} src={pathPub} alt="img" />
             <div className={ls.info}>
                 <h3 className={ls.title}>
                     {title}

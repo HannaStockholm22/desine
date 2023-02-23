@@ -1,6 +1,7 @@
 .line {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 16px;
     font-weight: 600;
@@ -25,3 +26,17 @@
     width: 5px;
     height: 5px;
 }
+
+@media(max-width: 525px) {
+    .line {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;   
+    }   
+    .link {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+}
+

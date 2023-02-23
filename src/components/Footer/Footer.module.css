@@ -36,21 +36,29 @@ a {
   padding: 42px 0 41px;
 }
 
-@media (max-width:1028px) {
+@media (max-width:940px) {
   .inner {
-    display: block;  
-  }
+    flex-wrap: wrap; 
+    }
 
   .block{
-    width: 65%;
+    justify-content: center;
+    width: 100%;
   }
-
   .socialEl {
-    width: 125px;
+    margin-left: auto;
     margin-right: auto;
-    margin-left: 0px;
-  }  
+  }
+  .footMenuEl {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-
-
-
+@media (max-width:580px) {
+  .content {
+    padding-top: 30px ;
+  }
+  .socialEl {
+    margin-left: 0;
+  }
+}

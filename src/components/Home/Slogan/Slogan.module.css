@@ -2,9 +2,7 @@
     padding:170px 0 155px ;
     background-image: url(/public/images/slogan-bg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-  
-    
+    background-repeat: no-repeat;   
 }
 .title{
     font-family: Montserrat, sans-serif;
@@ -30,4 +28,31 @@
 
 .text{   
     max-width: 540px;
+}
+
+
+@media (max-width:1144px) {
+    .inner{
+        padding:120px 0 105px ;
+       
+    }   
+}
+@media (max-width:812px) {
+    .inner{
+        padding:70px 0 55px ;
+       
+    }  
+    .title{
+        font-size: 28px;
+        line-height: 36px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        
+    }
+}
+@media (max-width:586px) {
+    .text{
+     font-size: 14px;  
+     line-height: 18px;
+    }
 }

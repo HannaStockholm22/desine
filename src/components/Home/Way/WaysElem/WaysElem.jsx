@@ -4,9 +4,9 @@ import ls from './WaysElem.module.css';
 const WaysElem = ({name,id,title,text}) => {
     const pathpub = `images/way/${name}`;
     let odd;
-    let marg = 0;
+    let marg;
 
-    if (id > 1) marg = 290;
+    if (id === 1) marg = 0;
 
     const myStyle = {
         marginLeft: `${marg}px`

@@ -1,33 +1,55 @@
-  
 .radio {
-	display: inline-block;
-	margin: 0 12px;
-}
+      display: inline-block;
+      margin: 0 12px;
+  }
 .input {
-	display: none;
-}
+      display: none;
+  }
 .label {
-	display: inline-block;
-    border: 1px solid #454647;
-    border-radius: 20px;
-    background-color:inherit;
-    color: #8F8D8D;
-    font-size: 14px;
-    line-height: 28px;
-    padding: 6px 22px;
-    
-    cursor: pointer;
-}
-/* Checked */
-.input:checked + label {
-    background-color: #FFEF35;  
-    transition: all .5s;
-}
-/* Hover */
+      display: inline-block;
+      border: 1px solid #454647;
+      border-radius: 20px;
+      background-color: inherit;
+      color: #8F8D8D;
+      font-size: 14px;
+      line-height: 28px;
+      padding: 6px 22px;
+      cursor: pointer;
+  }
+
+  /* Checked */
+.input:checked+label {
+      background-color: #FFEF35;
+      transition: all .5s;
+  }
+
+  /* Hover */
 .label:hover {
-	border: 1px solid #FFEF35;
-    transition: all .5s;
+      border: 1px solid #FFEF35;
+      transition: all .5s;
+  }
+
+@media(max-width: 940px) {
+      .label {
+          padding: 4px 12px;
+      }
+  }
+
+@media(max-width: 820px) {
+   .radio {
+          margin: 7px;
+
+      }
+
+  .label {
+          font-size: 14px;
+          line-height: 22px;
+          padding: 2px 8px;
+
+      }
+  }
+  @media(max-width: 340px) {
+    .label {
+       width: 210px;
+    }
 }
- 
-
-

@@ -52,14 +52,45 @@
     cursor: pointer;
 }
 
-@media (max-width:578px) {
-    .form{
-        display: block;
-    } 
-    .btn{
-        margin: 15px 0;
+@media (max-width:1028px) {
+    .inner {
+        width: 480px;
     }
+}
+@media (max-width:940px) {
     .inner{
         width: 95%;
     }
+
+    .text {
+        max-width: 100%;        
+    }  
+  
+  }
+
+@media (max-width:578px) {
+    .inner{
+        width: 95%;
+    }
+
+    .text {
+        max-width: 100%;   
+       
+    }
+    .form{
+        display: block;
+
+    } 
+    .input{
+        width:88%;
+    }
+    .btn{
+        margin: 15px 0;
+    }
+  
+}
+@media (max-width:340px) {
+    .btn{
+       width: 100%;
+    }  
 }

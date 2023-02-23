@@ -54,3 +54,19 @@
     font-weight: 600;
     color:#707070;
 }
+
+@media (max-width:1385px) {
+    .img {
+    
+        max-width: 200px;
+    }
+}
+@media (max-width:1144px) {
+    .img { 
+        max-width: 100%;
+    }
+}
+@media (max-width:812px) {
+    
+       
+    }

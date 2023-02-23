@@ -1,3 +1,4 @@
+
 .img {
     object-fit: cover;
     width: 100%;
@@ -15,3 +16,27 @@
     line-height: 38px;
     margin: 7px 0;
 }
+
+ @media(max-width: 1134px){
+    .title {
+        font-size: 20px;
+        line-height: 28px;   
+    }
+ }
+ @media(max-width: 812px){
+    .title {
+        font-size: 18px;
+        line-height: 20px;   
+    }
+ }
+ @media(max-width: 684px) {
+    .item {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 525px) {
+    .img {
+        margin-bottom: 5px;
+    }
+}
+

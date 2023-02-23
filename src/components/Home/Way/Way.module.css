@@ -35,3 +35,27 @@
     bottom: -5px;
     border-radius: 50%;
 }
+
+.add{
+    margin: 25px 0px;
+   display: none;
+}
+
+@media (max-width:812px) {
+    .inner{
+        padding:40px 0 50px ;    
+    }  
+    .title{
+        font-size: 28px;
+        line-height: 36px;    
+    }
+}
+@media (max-width:670px) {
+    .add{   
+       display: block;
+    }
+    .top{
+        display: none;
+    }
+
+}

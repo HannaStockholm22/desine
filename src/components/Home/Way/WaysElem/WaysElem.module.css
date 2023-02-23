@@ -1,14 +1,9 @@
+.inner1,
 .inner2 {
     max-width: 255px;
     padding: 10px 5px;
     position: relative;
-
-}
-
-.inner1 {
-    max-width: 255px;
-    padding: 10px 5px;
-    position: relative;    
+    margin-left: 299px;
 }
 
 .inner2::after {
@@ -47,4 +42,43 @@ img {
     font-weight: 600;
     line-height: 23px;
     color: #363838;
+}
+
+@media (max-width:830px) {
+
+    .inner1,
+    .inner2 {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width:670px) {
+    .inner1,
+    .inner2 {
+        margin: 0px;
+        max-width: 555px;
+    }
+    .inner1::after { 
+        height: 0px;
+       
+    }
+    .inner2::after {
+        height: 45px; 
+        top: -35px;
+    }
+    .inner2::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 45px;
+        background: #363838;   
+        bottom: -35px;
+        left: 4px;
+    }
+    .text {   
+        font-size: 14px;
+        line-height: 18px;
+      
+    }
+
 }

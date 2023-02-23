@@ -5,3 +5,25 @@
     gap: 15px;
     margin-bottom: 20px;
 }
+
+@media(max-width: 940px) {
+    .inner {  
+        gap: 10px;   
+    } 
+}
+@media(max-width: 640px) {
+    .inner {  
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr); 
+    } 
+}
+@media(max-width: 540px) {
+    .inner {  
+        gap: 5px; 
+    } 
+}
+@media(max-width: 340px) {
+    .inner {  
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }

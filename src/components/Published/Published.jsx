@@ -7,7 +7,7 @@ const Published = ({info, show}) => {
    
     return (
         <div className={ls.line}>
-            {datsElements}
+            {datsElements} 
             <NavLink className={ls.link} to='/blog'> {info.autor}</NavLink>
             <NavLink className={ show ? ls.link : ls.hide} to='/blog'> {info.category}</NavLink>    
         </div>

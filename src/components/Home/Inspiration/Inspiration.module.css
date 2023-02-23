@@ -1,6 +1,7 @@
-.section{
+.section {
     padding-top: 40px;
 }
+
 .title {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
@@ -20,4 +21,36 @@
     grid-template-rows: 1;
     margin-bottom: 80px;
     grid-gap: 30px
+}
+
+
+@media(max-width: 1134px) {
+    .inner {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        grid-template-rows: 1;
+        margin-bottom: 80px;
+        grid-gap: 30px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .inner {
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width:812px) {
+    .inner {
+        margin-bottom: 0px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+@media(max-width: 684px) {
+    .inner {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
