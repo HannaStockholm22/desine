@@ -8,10 +8,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .btn{
     background-color: inherit;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+@media(max-width:812px){
+    .inner{
+        padding-top: 40px;
+        height: 314px;
+        display: flex;
+      
+    }
+}
+@media(max-width:500px){
+  
 }

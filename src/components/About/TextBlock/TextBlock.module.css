@@ -15,3 +15,22 @@
     padding-top: 23px;
     margin-bottom: 23px;
 }
+
+@media(max-width:812px){
+    .inner {
+        padding-top: 60px;
+       
+    }
+    .info { 
+        margin: 13px 0;
+        max-width: 825px;
+        padding-left: 4px;
+    } 
+}
+@media(max-width:586px){
+    .text{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0px;
+    }
+}
