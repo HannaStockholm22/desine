@@ -83,7 +83,7 @@
     display: inline-block;
     border: 1px solid #8F8D8D;
     border-radius: 14px;
-    margin:  0 15px 15px 0;
+    margin: 0 15px 15px 0;
     padding: 0 10px;
 
 }
@@ -91,4 +91,32 @@
 .line {
     display: flex;
     justify-content: flerx-start;
+}
+
+@media (max-width:1134px) {
+    .inner{
+        margin-bottom: 64px;   
+    }
+    .form {
+        width: 85%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        margin-bottom: 24px;
+    }
+      .link {
+        margin: 0px 10px;
+    }
+    .lastPosts {
+        margin-bottom: 34px;
+    }
+    .tags {
+        margin-bottom: 0px;
+    }
+   
 }

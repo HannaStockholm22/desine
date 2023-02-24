@@ -6,7 +6,6 @@ const PostsCard = ({data}) => {
     const pathpub = `images/posts/${data.photo}`;
     return (
         <div className={ls.inner} >
-           
             <img className={ls.img} src={pathpub} alt="image" />
             <div className={ls.video}></div>
             <div className={ls.forpublished}>

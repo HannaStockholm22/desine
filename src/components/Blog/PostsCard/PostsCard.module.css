@@ -27,3 +27,34 @@
     text-align: left;
     margin-bottom: 6px;
 }
+
+@media(max-width:1134px) {
+    .inner {
+        max-width:1100px;
+        width: 97%;
+    } 
+    .img {
+        width: 99%;
+    }
+}
+@media(max-width:812px) {
+    .img {
+        margin-bottom: 15px;
+    }
+    .title {  
+        font-size: 20px;
+        line-height: 28px;  
+    }
+}
+
+@media(max-width:685px) {
+    .inner {
+        padding-bottom: 10px;
+    } 
+}
+@media(max-width:586px) {
+    .text {  
+        font-size: 14px;
+        line-height: 18px;  
+    }
+}
