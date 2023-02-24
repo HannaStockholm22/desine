@@ -15,7 +15,7 @@ const Contact = ({data, dispatch, text}) => {
         <div >
             <BreadCrumbs name={'Contact'} path={'/contact'} />
             <div className={ls.map}>
-                <iframe style={{ width: "100%", height: "578" }} width="1920" height="578" title="map"
+                <iframe style={{ width: "100%" }} width="1920"  title="map"
                     src="https://maps.google.com/maps?width=1920&amp;height=578&amp;
                     hl=en&amp;q=%20Green%20St%20San%20Francisco%2C%20California(CA)%2C%2094133+(Title)&amp;
                     ie=UTF8&amp;t=p&amp;z=16&amp;iwloc=B&amp;output=embed"

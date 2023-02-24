@@ -1,52 +1,50 @@
 .link {
     font-weight: 600;
     font-size: 14px;
-    color:#363838;
+    color: #363838;
     display: inline-block;
     padding-left: 10px;
-    margin-bottom: 22px;  
- }
-.form{
-    display: flex;
+    margin-bottom: 22px;
 }
-.blocktop{
+
+.blocktop {
     display: grid;
-    grid-template-columns: repeat(2,1fr) ;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 43px;
     margin-bottom: 13px;
 }
-.input, .textarea{
-    padding: 6px  10px  6px 18px;
+
+.input,
+.textarea {
+    padding: 6px 10px 6px 18px;
     border-radius: 21px;
     background-color: transparent;
-    border: 1px solid  #DFDFDF;
-    width:100%;
+    border: 1px solid #DFDFDF;
+    width: 100%;
 }
 
-.input::placeholder, .textarea::placeholder{
-    font-family: 'Open Sans',sans-serif;
+.input::placeholder,
+.textarea::placeholder {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
     color: #A1A1A1;
-    
 }
 
-.blockbottom{
+.blockbottom {
     margin-bottom: 20px;
 }
-.textarea{
+
+.textarea {
     resize: none;
     min-height: 125px;
 }
- 
 
-
-
-.btn{
+.btn {
     background-color: #363838;
     border: none;
-    color:#FFFFF0;
+    color: #FFFFF0;
     font-weight: 600;
     border-radius: 21px;
     padding: 6px 12px;
@@ -55,3 +53,17 @@
     cursor: pointer;
 }
 
+@media (max-width:586px) {
+    .blocktop { 
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 13px;
+    }
+}
+@media (max-width:340px) {
+    .btn {
+        padding: 6px 12px;
+        min-width: 220px;
+        width: 110%;
+        margin: 0px; 
+    }
+}

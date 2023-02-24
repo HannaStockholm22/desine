@@ -1,7 +1,9 @@
 .map{
     margin-bottom: 50px;
 }
-
+iframe {
+    height: 578px;
+}
 .info { 
     margin: 23px 0;
     max-width: 825px;
@@ -34,3 +36,41 @@
     padding: 100px 0px;
 }
 
+@media (max-width:1168px){
+    .forms{
+        width: 93%;
+    }
+}
+
+@media (max-width:868px){
+    .map{
+        margin-bottom: 30px;
+    }
+    iframe {
+        height: 300px;
+    }
+    .info { 
+        margin: 7px 0;
+        max-width: 825px;
+        padding-left: 4px;
+    }
+
+}
+
+@media (max-width:560px){
+    .forms{
+        width: 83%;
+    }
+    .text1{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .sliderBlock{
+        padding: 50px 10px;  
+    }
+}
+@media (max-width:376px){
+    .sliderBlock{
+        padding-left :60px;  
+    }
+}

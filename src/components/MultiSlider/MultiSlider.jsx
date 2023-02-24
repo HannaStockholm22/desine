@@ -55,6 +55,14 @@ const MultiSlider = ({play,data}) => {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
+            },
+            {
+              breakpoint: 378,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              }
             }
           ]
     }
