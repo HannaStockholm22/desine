@@ -1,27 +1,20 @@
 import React, { useRef } from 'react';
 import ls from './OnePageNumber.module.css';
-import { updatePageNumberActionCreator } from './../../../store/state';
 
-const OnePageNumber = ({id,activePage,dispatch}) => {
+
+const OnePageNumber = ({id,activePage,changePageContent}) => {
     const inputEl = useRef();
     let choice = id;
-    let check;
-
-    if (activePage === id) check = true;
-   
-
-    const onClickBtn = () => {
+  
+    const onClickChangeNumber = () => {
         choice = inputEl.current.value;
-        console.log('choice==', choice);
-        dispatch(updatePageNumberActionCreator(choice));
-        console.log('new=',activePage);
-
+        changePageContent(choice);
     }
 
     return (
         <div className={ls.radio} >
-            <input className={ls.input} id={id} ref={inputEl} type="radio" name="radio" value={id} checked={check} />
-            <label className={ls.label} for={id} onClick={onClickBtn} >{id + 1}</label>
+            <input className={ls.input} id={id} ref={inputEl} type="radio" name="radio" value={id} checked={activePage == id} />
+            <label className={ls.label} for={id} onClick={onClickChangeNumber} >{id + 1}</label>
         </div>
     )
 

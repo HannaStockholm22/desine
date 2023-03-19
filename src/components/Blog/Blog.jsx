@@ -4,31 +4,36 @@ import BreadCrumbs from '../BreadCrumbs/BreadCrumbs';
 import ls from './Blog.module.css';
 import OnePageNumber from './OnePageNumber/OnePageNumber';
 import PostsCard from './PostsCard/PostsCard';
+//import { updatePageNumberActionCreator } from './../../store/state';
 
 
+const Blog = ({data,dispatch}) => {
 
-const Blog = ({data}) => {
-
-    //const [number, setNumber] = useState(pageNumber);
-    //inputEl = useRef();
-
-    const point = data.blogPage;
-    const pageNumber = point.activePage;
-    const onPage = point.onPage;
-    const length = point.postsData.length;
-
+    const [pageNumber, setPageNumber] = useState(0);
   
+    const onPage = data.blogPage.onPage;
+    const length = data.blogPage.postsData.length;
+
+    const changePageContent=(newNumber)=>{
+        setPageNumber(newNumber); 
+       // dispatch(updatePageNumberActionCreator(newNumber));
+    }
+
     const start = pageNumber * onPage;
     let end = start + onPage;
     if (end > length) end = length;
-    const postsEl = point.postsData.slice(start, end).map(el =><PostsCard data={el} activePage={pageNumber} />);
+
+    const postsEl = data.blogPage.postsData.slice(start, end).map(
+        el =><PostsCard data={el} activePage={pageNumber} />
+    );
     
     let pageCount = Math.ceil(length / onPage);
     let pageData = [];
     for (let index = 0; index < pageCount; index++) {
         pageData[index] = index;
     }
-    const pageChose = pageData.map(el => <OnePageNumber id={el} activePage={pageNumber} />);
+ 
+    const pageChose = pageData.map(el => <OnePageNumber id={el} activePage={pageNumber} changePageContent={changePageContent} />);
 
 return (
     <div>

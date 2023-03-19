@@ -31,8 +31,9 @@
 
 .link {
   color: inherit;
-  border: 2px solid inherit;
+ /* border: 2px solid inherit; */
   padding: 2px;
+ 
 }
 
 .active {
